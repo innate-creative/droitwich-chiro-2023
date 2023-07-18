@@ -1,0 +1,54 @@
+---
+layout: default
+title: Frequently Asked Questions about Chiropractic - Dr. Family
+description_text:
+short_description:
+faqs:
+  - question: Is chiropractic safe?
+    answer: Your answer goes here
+  - question: How many adjustments do I need?
+    answer: Your answer goes here
+  - question: How long are the appointments?
+    answer: Your answer goes here
+keywords: []
+page_scripts_code_block: >-
+  <script>
+  const faqs = Array.from(document.querySelectorAll('.faq'));
+  console.log(faqs);
+    if (faqs.length > 0) {
+      faqs.forEach(function (faq) {
+        faq.addEventListener('click', function () {
+          faq.firstElementChild.classList.toggle('inactive');
+          faq.firstElementChild.classList.toggle('mt-4');
+          ;
+          let other = faqs.filter(faq => faq !== this);
+          other.forEach(function (btn) {
+            let answer = btn.firstElementChild;
+            answer.classList.add('inactive');
+            answer.classList.remove('mt-4');
+          });
+        });
+      });
+    };
+  </script>
+---
+<header class="bg-green-50">
+  <div class="container mx-auto h-72 md:h-60 flex flex-col items-center justify-end md:justify-center px-4 md:px-0 pb-8 pd:pb-0">
+    <h1 class="editable text-3xl md:text-5xl text-green-700 mb-6">
+      Frequently Asked Questions
+    </h1>
+    <p class="editable text-base md:text-xl text-gray-700">
+      Browse through some of our most popular questions. Still haven't found an answer? <a href="/contact" class="text-green-500 hover:underline">Contact us.</a>
+    </p>
+  </div>
+</header>
+<main id="faqs" class="bg-green-50">
+  <div class="container mx-auto pb-20 px-4 md:px-0">
+    <div class="flex flex-col w-full md:w-1/2 md:mx-auto gap-4">
+      {% for faq in page.faqs %}
+      {% include components/faq.html %}
+      {% endfor %}
+    </div>  
+  </div>
+</main>
+{% include sections/cta.html %}

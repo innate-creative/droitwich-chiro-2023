@@ -1,0 +1,88 @@
+---
+layout: default
+page_scripts_code_block: >-  
+---
+<div class="container mx-auto rounded-md pt-24 md:pt-8 px-4 md:px-0 pb-6">
+  <div class="blog-post-bg py-32 md:py-40 relative mb-4 md:mb-8 rounded-md overflow-hidden" style="background-image: url({{page.feature_image}});">
+    <div class="container mx-auto text-center mb-4 md:mb-8">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 editable text-green-600 relative tracking-wide">
+        {{page.title}}
+      </h1>
+    </div>
+  </div>    
+</div>
+<section class="container mx-auto flex flex-row md:gap-20 relative mb-6 md:mb-12">
+  <main class="condition-content flex-grow md:flex-grow-0 pb-12 px-4 lg:px-0">
+    <div class="flex flex-row justify-between items-center mb-6">
+      <div class="flex flex-col gap-2">
+        <span class="text-sm md:text-lg text-gray-500">
+          by {{ page.author }}
+        </span>        
+        <span class="text-sm md:text-lg text-gray-500">
+          Published on: {{ page.date | date_to_string }}
+        </span>
+      </div>
+      <div class="hidden sm:block">
+        {% include components/share-menu.html %}
+      </div>
+    </div>
+    <div class="markdown">
+      {{ content }}
+    </div>
+    <div class="block sm:hidden mt-6">
+      {% include components/share-menu.html %}
+    </div>
+  </main>
+  <aside class="flex-shrink-0 hidden lg:block sticky top-0">    
+    <div class="opening-hours p-4 md:p-8 bg-gray-200 rounded-md">
+      <h3 class="text-lg text-green-600 mb-4 font-heading">
+        Opening Hours
+      </h3>
+      <table class="mb-4">
+        {% for schedule in site.data.settings.opening_hours %}
+        <tr class="border-separate">
+          <td class="text-gray-700 font-semibold text-sm font-light pr-4">
+            {{ schedule.day }}
+          </td>
+          <td class="text-gray-700 text-sm font-light text-right pl-4">
+            {{ schedule.hours }}
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+      <a href="/book-online" class="inline-block btn-solid btn-small">
+        Book now
+      </a>
+    </div>
+  </aside>
+</section>
+<section class="container mx-auto mb-6 md:mb-24 px-4 md:px-0">
+  <h2 class="text-gray-600 text-3xl font-bold uppercase mb-4">More resources</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {% if page.previous %}
+      {% assign previous = page.previous %}
+    {% else %}
+      {% assign previous = site.posts[0] %}
+    {% endif %}   
+    {% include components/blog-related-card.html post='previous' %} 
+    
+    {% if page.next %}
+    {% assign next = page.next %}
+    {% include components/blog-related-card.html post='next' %}
+    {% endif %}
+  </div>
+</section>
+
+{% include sections/cta.html %}
+<script>
+  function copyPageUrl() {
+    const currentUrl = window.location.href;
+    navigator.clipboard.writeText(currentUrl)
+      .then(() => {
+        alert("Link has been copied to clipboard!");
+      })
+      .catch(() => {
+        console.log("Error: current URL could not be copied");
+      });
+  }
+</script>

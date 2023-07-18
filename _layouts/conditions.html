@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<div class="atf-bg py-32 md:py-40 relative mb-8" style="background-image: url({{page.header_image}});">
+  <div class="container mx-auto text-center mb-4 md:mb-8">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 editable text-green-600 relative tracking-wide">
+      {{page.header_title}}
+    </h1>
+  </div> 
+</div>
+<section class="container mx-auto flex flex-row gap-20 relative">
+  <main class="condition-content pb-12 px-4 lg:px-0">
+    <h2 class="small-title">
+      Adjustments for {{page.header_title}}
+    </h2>
+    
+    {{content}}
+    {% include components/share-menu.html %}
+  </main>
+  <aside class="flex-shrink-0 hidden lg:block sticky top-0">
+    <nav class="flex flex-col p-4 md:p-8 gap-4 justify-between rounded-md bg-gray-600 mb-6">
+      <h2 class="text-lg text-green-300 uppercase">
+        Browse all conditions:
+      </h2>
+      {% for condition in site.conditions %}
+      <a href="{{condition.url}}" class="text-gray-50 font-light hover:text-green-400">
+        {{condition.header_title}}        
+      </a>
+      {% endfor %}
+    </nav>
+    <div class="opening-hours p-4 md:p-8 bg-gray-200 rounded-md">
+      <h3 class="text-lg text-green-600 mb-4 font-heading">
+        Opening Hours
+      </h3>
+      <table class="mb-4">
+        {% for schedule in site.data.settings.opening_hours %}
+        <tr class="border-separate">
+          <td class="text-gray-700 font-semibold text-sm font-light pr-4">
+            {{schedule.day}}
+          </td>
+          <td class="text-gray-700 text-sm font-light text-right pl-4">
+            {{schedule.hours}}
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+      <a href="/book-online" class="inline-block btn-solid btn-small">
+        Book now
+      </a>
+    </div>
+  </aside>
+  
+  
+  
+</section>
+
+{% include sections/cta.html %}

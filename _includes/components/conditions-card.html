@@ -1,0 +1,16 @@
+{% case include.style %}
+{% when "default" %}
+<a href="{{ condition.url }}" class="condition-card relative rounded-md overflow-hidden">
+  <div class="condition-card-bg h-full text-gray-50 shadow-lg group"
+    style='background-image: url({% picture direct "{{condition.preview_image | default: "/assets/images/placeholder.jpg"}}" %});'>
+      <h3 class="text-green-200 text-center text-2xl md:text-4xl font-bold mb-6 p-4 md:p-6 relative" >
+        {{ condition.header_title }}
+      </h3>
+    <div class="opacity-70 md:opacity-0 group-hover:opacity-100 transition-all bg-gray-700 h-full">      
+      <p class="text-gray-50 text-sm p-4 md:p-6 relative">
+        {{ condition.short_description | truncate: 80 | append: '[...]'}}
+      </p>
+    </div>
+  </div>
+</a>
+{% endcase %}

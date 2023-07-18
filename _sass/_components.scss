@@ -1,0 +1,46 @@
+.faq {
+  @apply 
+    border
+    border-green-800
+    rounded-md
+    tracking-wider 
+    p-4
+    focus:outline-none
+    text-base    
+    text-green-800
+    focus:bg-gray-100
+    uppercase;
+}
+
+input,
+textarea {
+  &::placeholder {
+    @apply
+      text-gray-50;
+  }
+}
+
+.social-share-icon {  
+  aspect-ratio: 1 / 1 ;
+  @apply
+    block
+    h-9
+    w-9
+    p-2
+    rounded-full
+    bg-gray-100;
+  svg {
+    fill: rgb(72, 72, 72);
+  }
+}
+
+.condition-card {
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;  
+    background-color:rgba(72, 72, 72, 0.4);
+  }  
+}

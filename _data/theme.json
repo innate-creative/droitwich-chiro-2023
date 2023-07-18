@@ -1,0 +1,13 @@
+{
+  "fonts": {
+    "body_font_family": "'Raleway', sans-serif;",
+    "heading_font_family": "'Raleway', sans-serif;"
+  },
+  "colors": {
+    "main_color": "#555555",
+    "secondary_color": "#f2f2f2",
+    "tertiary_color": "#FFD500",
+    "highlight_color": "#123456",
+    "highlight_shade_color": "#654321"    
+  }  
+}

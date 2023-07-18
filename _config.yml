@@ -1,0 +1,115 @@
+cloudcannon:
+  data: true
+
+sass:
+  dir: _sass
+  style: compressed  
+
+uploads_dir: "assets/images"
+css_dir: "/style"
+
+_comments:
+  body_font_family: Add the font code block on the configurations menu
+  heading_font_family: Add the font code block on the configurations menu
+  preview_image: "Upload a preview image that is MAXIMUM 600px wide"
+  custom_css_code_block: 'Add custom styles to your site (SCSS-compatible). This theme uses TailwindCSS 2.1. Important: You might require the assistance of a developer.'
+  page_scripts_code_block: "Attention: this field requires JavaScript knowledge and changes might break your site's functionality. Contact support@innatewebsites.com if you need help with this."
+  head_code_block: Add scripts to the site's just above the </head> tag; affects all layouts
+  body_code_block: Add scripts to the site's just above the </body> tag; affects all layouts
+  description_text: Content shown on SERP and social sharing. Optimise this for SEO.
+  index: Order of elements
+  title: The page name displayed on the browser tab and SERP. Optimise for SEO.
+  header_title: The display title on the page H1 element.
+  address_url: Use the Google Maps direct link on this field; opens a map upon clicking on the link
+  google_maps_embed_url: Add the Google Maps embed URL code here (HTTPS link without the iframe code)
+
+plugins:
+  - jekyll-strapi
+  - jekyll-sitemap
+  - jekyll-postcss
+  - jekyll-purgecss  
+  - jekyll_picture_tag
+  - jekyll-paginate-v2
+
+picture:
+  source: "/"
+  output: "srcset/"
+  suppress_warnings: true
+
+pagination:
+  enabled: false
+  per_page: 4
+  permalink: '/:categories/:year/:title'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true  
+
+# webp:
+#   enabled: true
+#   nested: true
+#   img_dir: ["/assets/images"]
+#   regenerate: false
+
+colors:
+  - "main"
+  - "secondary"
+  - "tertiary"
+  - "highlight"
+  - "shade"
+
+channels:
+  - "Facebook"
+  - "Instagram"
+  - "Twitter"
+  - "WhatsApp"
+  - "Github"
+  - "Snapchat"
+  - "LinkedIn"
+  - "Skype"
+  - "Telegram"
+  - "Signal"
+  - "Messenger"
+    
+text_colors:
+  - "text-gray-50"
+  - "text-gray-100"
+  - "text-gray-200"
+  - "text-gray-300"
+  - "text-gray-400"
+  - "text-gray-500"
+  - "text-gray-600"
+  - "text-gray-700"
+  - "text-gray-800"
+  - "text-gray-900"
+
+background_colors:
+  - "bg-green-50"
+  - "bg-green-100"
+  - "bg-green-200"
+  - "bg-green-300"
+  - "bg-green-400"
+  - "bg-green-500"
+  - "bg-green-600"
+  - "bg-green-700"
+  - "bg-green-800"
+  - "bg-green-900"
+
+collections:
+  posts:
+    output: true
+    sort_by: index
+    permalink: /blog/:categories/:year/:title
+  conditions:
+    output: true
+    sort_by: index
+    permalink: /conditions/:title
+
+strapi:
+  # Your API endpoint (optional, default to http://localhost:1337)
+  endpoint: http://localhost:1337
+  collections:
+    posts:
+      type: posts
+    conditions:
+      type: conditions

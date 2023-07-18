@@ -1,0 +1,15 @@
+<div class="social-icons flex flex-row gap-6 items-center justify-center md:justify-end">
+  <span class="text-sm text-gray-600">Share this article: </span>
+  <a href="https://wa.me/{{ site.data.settings.general.phone }}" class="social-share-icon" rel="noopener noreferrer" target="_blank">
+    {% include social-icons.html icon="WhatsApp" %}
+  </a>
+  <a href="https://m.me/" class="social-share-icon" rel="noopener noreferrer" target="_blank">
+    {% include social-icons.html icon="Messenger" %}
+  </a>
+  <button id="url-share" onclick="copyPageUrl()" class="social-share-icon">
+    {% include social-icons.html icon="Link" %}
+  </button>
+  <a href="mailto:?subject=I%20found%20this%20interesting&body={{ site.data.settings.general.site_url }}{{ page.url | relative_url }}" class="social-share-icon">
+    {% include social-icons.html icon="Email" %}
+  </a>
+</div>

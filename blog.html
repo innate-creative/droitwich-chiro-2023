@@ -1,0 +1,49 @@
+---
+layout: default
+title: Resources about Chiropractic
+---
+<main class=" container mx-auto px-4 md:px-0 py-24 md:py-8">
+  <h1 class="editable text-3xl md:text-6xl text-green-800 font-bold mb-6">Educational Resources</h1>
+  <p class="editable text-lg text-gray-700 mb-6">
+    Read our latest posts about chiropractic:
+  </p>
+  <div class="flex flex-col md:flex-row gap-8 mb-6">    
+    <div class="latest-image h-40 md:h-80 flex-1 rounded-md overflow-hidden">
+      {% assign latest = site.posts | first %}
+    <a href="{{ latest.url | relative_url }}">
+      {% picture jpt-webp "{{latest.feature_image | default: '/assets/images/placeholder.jpg' }}" --img alt="{{ latest.feature_image_alt_text }}" class="object-cover h-full w-full"%}      
+    </a>
+    </div>
+    <div class="flex flex-col gap-6 justify-center flex-1">
+      <div>
+        <h2 class="text-2xl md:text-4xl text-green-600 uppercase">{{ latest.title }}</h2>
+        <span class="text-sm text-gray-500">
+          by {{ latest.author }}
+        </span>
+        <span class="text-sm text-gray-500"> | </span>
+        <span class="text-sm text-gray-500">
+          Published on: {{ latest.date | date_to_string }}
+        </span>
+      </div>
+      <p class="text-sm md:text-lg"> {{ latest.short_description }}
+      </p>
+      <div class="">
+        <a href="{{ latest.url | relative_url }} " class="btn-default btn-solid">
+          Read article
+        </a>
+      </div>
+    </div>    
+  </div>
+</main>
+<section id="posts" class="posts bg-gray-200 py-8 md:py-16 px-4 sm:px-0">
+  <div class="container mx-auto">
+    <div class="grid grid-cols-2 gap-6 md:gap-8">
+      
+      {% for post in site.posts offset: 1 limit: 4 %}
+      
+        {% include components/blog-preview-card.html %}
+
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,112 @@
+general:
+  site_url: 'https://chiro-modern.innatewebsites.com'
+  address: 1 Main Street, 50555
+  address_url: 'https://goo.gl/maps/RsiRVFJAKbnb3mCt7'
+  google_maps_embed_url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.7374875661712!2d-94.35328258482414!3d32.53315748104622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8636f68c7e8fffff%3A0xfb30ff7a5d76ac96!2s1301%20E%20End%20Blvd%20S%20Suite%20C%2C%20Marshall%2C%20TX%2075670%2C%20USA!5e0!3m2!1sen!2sbr!4v1635976855019!5m2!1sen!2sbr'
+  email: 'support@innatewebsites.com'
+  phone: 555-555-5555
+  social:
+    - channel: "Facebook"
+      add_to_chat_bubble: false
+      url: 'https://facebook.com'
+    - channel: "WhatsApp"
+      add_to_chat_bubble: true
+      url: 'https://wa.me/'
+    - channel: "Messenger"
+      add_to_chat_bubble: true
+      url: 'https://m.me'
+opening_hours:
+  - day: Monday
+    hours: 8am - 5pm
+  - day: Tuesday
+    hours: 8am - 5pm
+  - day: Wednesday
+    hours: 8am - 5pm    
+  - day: Thursday
+    hours: 8am - 5pm
+  - day: Friday
+    hours: 8am - 5pm    
+  - day: Saturday
+    hours: Closed  
+  - day: Sunday
+    hours: Closed
+branding:
+  site_title: Chiro Website Template
+  nav_logo_image: /assets/images/chiro-services-logo.svg
+  footer_logo_image: /assets/images/chiro-services-logo.svg
+  preview_image: /assets/images/logo.png
+navigation:
+  menus:
+    # - name: Home
+    #   url: '/'
+    #   is_dropdown: false
+    #   style_as_button: false
+    #   submenus:
+    #     - name:
+    #       url:        
+    - name: About
+      url: '/about-us'
+      is_dropdown: false
+      style_as_button: false
+      submenus:              
+        - name:
+          url:
+    - name: Conditions
+      url: '/conditions'
+      is_dropdown: true
+      style_as_button: false
+      submenus:
+        - name: Back Pain 
+          url: /conditions/back-pain
+        - name: Neck Pain 
+          url: /conditions/neck-pain
+        - name: Shoulder Pain
+          url: /conditions/shoulder-pain
+        - name: Disc Injuries
+          url: /conditions/disc-injuries
+        - name: Dizziness 
+          url: /conditions/dizziness
+        - name: Headaches 
+          url: /conditions/headaches      
+    - name: FAQS
+      url: '/faqs'
+      is_dropdown: false
+      style_as_button: false
+      submenus:
+        - name:
+          url:    
+    - name: Blog
+      url: '/blog'
+      is_dropdown: false
+      style_as_button: false
+      submenus:
+        - name:
+          url:    
+    - name: Contact
+      url: '/contact'
+      is_dropdown: false
+      style_as_button: false
+      submenus:             
+        - name:
+          url:
+    - name: Book now
+      url: '/book-online'
+      is_dropdown: false
+      style_as_button: true
+      submenus:                 
+        - name:
+          url:
+seo:
+  site_description_text: 
+  keywords: []
+configuration:
+  google_tag_manager_id:
+  head_code_block: >-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet preload" as="style" crossorigin="anonymous" type="text/css">
+   
+  body_code_block: >-
+
+  custom_css_code_block: >-
+  

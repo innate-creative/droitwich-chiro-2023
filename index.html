@@ -1,0 +1,182 @@
+---
+layout: default
+title: Family Chiropractic
+description_text: >-
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates dolorum
+  consequuntur numquam a quis repellendus quibusdam ipsum itaque beatae cum
+  impedit repellat totam earum autem obcaecati nesciunt nostrum, similique
+  doloremque!
+header_background_image: /assets/images/healthcare-websites-innate-creative-600w-00004.jpg
+header_button_url: /book-online
+keywords:
+page_scripts_code_block: |-
+  <script type="text/javascript">
+    window.addEventListener("DOMContentLoaded", function(){
+      gsap.set('.condition-card', {opacity: 0});
+      ScrollTrigger.batch(".condition-card", {
+          interval: 0.1,
+          start: "top 80%",
+          onEnter: (batch) => gsap.to(batch, {
+            opacity: 1,
+            stagger: 0.1
+          }),
+        });    
+    });
+    
+  </script>
+---
+
+<main class="home-bg atf-bg py-32 md:py-40 relative" style='background-image: url({% picture direct "{{page.header_background_image | default: "/assets/images/placeholder.jpg"}}" %});'>
+  <div class="container mx-auto px-4 md:px-0 py-8 md:py-24">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 editable text-gray-50 relative tracking-wide font-heading">
+      Schedule your consult today.
+    </h1>
+    <a href="/book-online" class="relative inline-block editable btn-solid btn-default">
+      Book Now
+    </a>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="109.085" viewbox="0 0 1920 109.085" fill="#4B5563" class="absolute bottom-0 left-0 w-full h-auto">
+    <path d="M0-5.547s602.97,133,949.517,29.271S1920-5.547,1920-5.547V77.671H0Z" transform="translate(0 31.414)" />
+  </svg>
+</main>
+<section class="bg-gray-600">
+  <div class="container mx-auto">
+    <!-- <h2 class="editable text-3xl md:text-6xl mb-6">Our Process</h2> -->
+    <div class="py-8 md:py-16 flex flex-col sm:flex-row justify-center gap-4">
+      <div class="p-0 md:p-6 text-center flex-1">
+        <div class="h-16 md:h-20 mx-auto mb-4">
+          {% include chiro-icons.html icon='26' fill_color="#f2f2f2" classes="object-contain w-full h-full" %}
+        </div>
+        
+        <h2 class="editable text-2xl text-gray-50 font-bold mb-4">
+          Diagnosis
+        </h2>
+        <p class="editable text-gray-50 font-light">
+          We listen to you. We diagnose the condition and identify the cause of your pain.
+        </p>
+      </div>
+      <div class="p-0 md:p-6 text-center flex-1">
+        <div class="h-16 md:h-20 mx-auto mb-4">
+          {% include chiro-icons.html icon='11' fill_color="#f2f2f2" classes="object-contain w-full h-full" %}
+        </div>
+        <h2 class="editable text-2xl text-gray-50 font-bold mb-4">
+          Adjustment
+        </h2>
+        <p class="editable text-gray-50 font-light">
+          We perform the adjustments according to your your condition.
+        </p>
+      </div>
+      <div class="p-0 md:p-6 text-center flex-1">
+        <div class="h-16 md:h-20 mx-auto mb-4">
+          {% include chiro-icons.html icon='15' fill_color="#f2f2f2" classes="object-contain w-full h-full" %}
+        </div>
+        <h2 class="editable text-2xl text-gray-50 font-bold mb-4">
+          Prevention
+        </h2>
+        <p class="editable text-gray-50 font-light">
+          We help you achieve your health goals by working on pain prevention.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="conditions" class="bg-gray-100 relative">
+  <div class="container mx-auto py-8 md:py-24 px-4 md:px-0">
+    <h2 class="editable text-4xl md:text-6xl font-bold text-gray-700 mb-4 sm:mb-6">
+      Conditions
+    </h2>
+    <p class="editable text-lg text-gray-700 mb-4 sm:mb-6">
+      Learn more how chiropractic can help you heal from pain.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-2 md:gap-6">
+      {% for condition in site.conditions %}
+      {% include components/conditions-card.html style="default" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% for member in site.data.staff.team_members %}
+{% include components/team-profiles.html profile_style="Round" %}
+{% endfor %}
+<section class="bg-gray-200">
+  <div class="default-container py-24 text-center">
+    <h2
+      class="editable text-4xl md:text-6xl mb-12 font-bold text-gray-700 relative inline-block border-b-4 border-sky pb-2">
+      Our Process
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 relative">
+      <div class="process-item ">
+        <div class="h-16 md:h-20 mx-auto mb-4">
+          {% include chiro-icons.html icon='5' fill_color="green" classes="object-contain w-full h-full" %}
+        </div>
+        <h2 class="editable text-2xl text-gray-700 font-bold mb-4">
+          We Listen.
+        </h2>
+        <p class="editable text-gray-700 font-light text-base">
+          Our complimentary consult is a time for us to listen carefully to how your problem affects your daily life.
+          The doctor will take a thorough clinical history and ask about your goals for your health. The purpose of this
+          stage is to clarify the problem and determine whether chiropractic can help you meet your goals.
+        </p>
+      </div>
+      <div class="process-item">
+        <div class="h-16 md:h-20 mx-auto mb-4">
+          {% include chiro-icons.html icon='26' fill_color="green" classes="object-contain w-full h-full" %}
+        </div>
+
+        <h2 class="editable text-2xl text-gray-700 font-bold mb-4">
+          Examination
+        </h2>
+        <p class="editable text-gray-700 font-light text-base">
+          Our comprehensive examination process includes neurological, orthopedic, and musculoskeletal tests designed to
+          establish an accurate diagnosis.
+        </p>
+      </div>
+      <div class="process-item">
+        <div class="h-16 md:h-20 mx-auto mb-4">
+          {% include chiro-icons.html icon='11' fill_color="green" classes="object-contain w-full h-full" %}
+        </div>
+        <h2 class="editable text-2xl text-gray-700 font-bold mb-4">
+          Personalized Treatment
+        </h2>
+        <p class="editable text-gray-700 font-light text-base">
+          Once the doctor has established a diagnosis, he will tailor a treatment plan specific to your needs and your
+          health goals.
+        </p>
+      </div>
+      <div class="process-item">
+        <div class="h-16 md:h-20 mx-auto mb-4">
+          {% include chiro-icons.html icon='15' fill_color="green" classes="object-contain w-full h-full" %}
+        </div>
+        <h2 class="editable text-2xl text-gray-700 font-bold mb-4">
+          Prevention
+        </h2>
+        <p class="editable text-gray-700 font-light text-base">
+          When your initial goals have been met, we may recommend periodic maintenance adjustments, specific
+          rehabilitation exercises, or lifestyle changes to help prevent problems from returning.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{% include sections/cta.html %}
+<section id="posts" class="posts bg-gray-200 py-8 md:py-16 px-4 sm:px-0">
+  <div class="container mx-auto">
+    <h2 class="editable text-4xl md:text-6xl font-bold text-green-800 mb-4 sm:mb-6">
+      Educational Resources
+    </h2>
+    <p class="editable text-lg text-gray-700 mb-4 sm:mb-6">
+      Read some of our latest articles about chiropractic care and its benefits.
+    </p>
+    <div class="grid grid-cols-2 gap-6 md:gap-8">
+
+      {% for post in site.posts limit: 2 %}
+
+      {% include components/blog-preview-card.html %}
+
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section id="location">
+  {% include sections/map.html %}
+</section>

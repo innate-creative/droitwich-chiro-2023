@@ -1,0 +1,6 @@
+team_members:
+  - name: Dr. Joe Doe
+    role: Chiropractor
+    bio: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto voluptatibus numquam, deleniti debitis dignissimos culpa assumenda atque accusamus doloribus beatae corporis quam quaerat neque, ullam dolorum dolores consequatur dicta. Adipisci.
+    profile_image: /assets/images/male-profile-placeholder.jpeg
+  

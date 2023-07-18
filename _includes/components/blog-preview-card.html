@@ -1,0 +1,26 @@
+<div class="col-span-2 sm:col-span-1">
+  <div class="flex flex-col">
+    <a href="{{ post.url | relative_url }}" class="mb-4">
+      <div class="h-52 rounded-md overflow-hidden">
+        {% picture jpt-webp "{{ post.preview_image | default: '/assets/images/placeholder.jpg'}}" --img alt="{{ post.preview_image_alt_text }}" class="object-cover h-full w-full" loading="lazy"%}        
+      </div>
+    </a>
+    <h3 class="text-xl font-semibold uppercase text-green-800">
+      {{ post.title }}
+    </h3>
+    <div class="mb-6">
+      <span class="text-sm text-gray-500">
+        by {{ post.author }}
+      </span>
+      <span class="text-sm text-gray-500"> | </span>
+      <span class="text-sm text-gray-500">
+        Published on: {{ post.date | date_to_string }}
+      </span>
+    </div>
+    <p class="text-sm mb-4">{{ post.short_description | truncate: 200 }}
+    </p>
+    <a href="{{ post.url | relative_url }}" class="btn-default btn-solid text-center">
+      Read article
+    </a>
+  </div>
+</div>
