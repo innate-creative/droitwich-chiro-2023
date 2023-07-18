@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary">
 
 <meta name="keywords"
-  content="{% if page.keywords %} {% for keyword in page.keywords %} {{ keyword }} {% endfor %} {% else %} {% for keyword in site.data.settings.seo.keywords %} {{ keyword }} {% endfor %} {% endif %}">
+  content="{% if page.keywords %} {% for keyword in page.keywords %} {{ keyword }}{%unless forloop.last%},{%endunless%} {% endfor %} {% else %} {% for keyword in site.data.settings.seo.keywords %} {{ keyword }} {% endfor %} {% endif %}">
 <meta itemprop="description" name="description"
   content="{% if page.description %}{{ page.description_text | truncate: 160 }} {% else %} {{ site.data.settings.seo.site_description_text | truncate: 160  }} {% endif %}" />
 
@@ -52,8 +52,8 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "{{site.data.settings.general.geo_coordinates.latitude}}",     
-      "longitude": "{{site.data.settings.general.geo_coordinates.longitude}}"
+      "latitude": "{{site.data.settings.general.address.geo_coordinates.latitude}}",     
+      "longitude": "{{site.data.settings.general.address.geo_coordinates.longitude}}"
     },
   "openingHoursSpecification": [
   {% for schedule in site.data.settings.opening_hours %}
@@ -65,7 +65,7 @@
     }{% unless forloop.last %},{%endunless%}
     {% endfor %}
     ],
-    "image": "https://www.examplechiropracticclinic.com/images/logo.jpg",
+    "image": "{{site.data.settings.branding.preview_image}}",
     "priceRange": "$$",
     "currenciesAccepted": "GBP",
     "paymentAccepted": "Cash, Credit Card",
@@ -73,10 +73,10 @@
       "@type": "GeoCircle",
       "geoMidpoint": {
         "@type": "GeoCoordinates",
-        "latitude": "40.7128",   // Replace with your clinic's latitude
-        "longitude": "-74.0060"  // Replace with your clinic's longitude
+        "latitude": "{{site.data.settings.general.geo_coordinates.latitude}}",
+        "longitude": "{{site.data.settings.general.geo_coordinates.longitude}}" 
       },
-      "geoRadius": "50.0",        // Adjust the radius based on your service area
+      "geoRadius": "50.0",
       "description": "Service area within a 50-mile radius"
     },
     "sameAs": [

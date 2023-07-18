@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://0.0.0.0:4000/conditions/back-pain</loc>
-<lastmod>2023-07-18T11:21:56-03:00</lastmod>
+<lastmod>2023-07-18T15:56:10-03:00</lastmod>
 </url>
 <url>
 <loc>http://0.0.0.0:4000/conditions/neck-pain</loc>
@@ -22,7 +22,7 @@
 </url>
 <url>
 <loc>http://0.0.0.0:4000/conditions/disc-injuries</loc>
-<lastmod>2023-07-18T11:21:56-03:00</lastmod>
+<lastmod>2023-07-18T15:56:10-03:00</lastmod>
 </url>
 <url>
 <loc>http://0.0.0.0:4000/blog/health/2020/first-post</loc>
@@ -58,10 +58,10 @@
 </url>
 <url>
 <loc>http://0.0.0.0:4000/faqs.html</loc>
-<lastmod>2023-07-18T11:21:56-03:00</lastmod>
+<lastmod>2023-07-18T15:56:10-03:00</lastmod>
 </url>
 <url>
 <loc>http://0.0.0.0:4000/</loc>
-<lastmod>2023-07-18T12:00:44-03:00</lastmod>
+<lastmod>2023-07-18T15:56:10-03:00</lastmod>
 </url>
 </urlset>
