@@ -23,13 +23,13 @@ _comments:
   address_url: Use the Google Maps direct link on this field; opens a map upon clicking on the link
   google_maps_embed_url: Add the Google Maps embed URL code here (HTTPS link without the iframe code)
 
-plugins:
-  - jekyll-strapi
+plugins:  
   - jekyll-sitemap
   - jekyll-postcss
   - jekyll-purgecss  
   - jekyll_picture_tag
   - jekyll-paginate-v2
+  - jekyll-last-modified-at
 
 picture:
   source: "/"

@@ -3,9 +3,9 @@ source 'https://rubygems.org'
   gem 'jekyll', '~>4.1'
   gem 'webrick'
 
-  group :jekyll_plugins do
-    gem 'jekyll-strapi'
+  group :jekyll_plugins do    
     gem 'jekyll-sitemap'
+    gem 'jekyll-last-modified-at'
     gem 'jekyll-postcss'
     gem 'jekyll-purgecss'
     gem 'jekyll-paginate-v2'

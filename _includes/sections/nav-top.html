@@ -1,20 +1,20 @@
 <div class="bg-gray-100 fixed sm:relative sm:top-0 w-full sm:w-auto z-50">
   {% include sections/alert-bar.html %}
   <div class="flex items-center justify-between px-4 md:px-0 py-2 md:py-4 container mx-auto">
-    <a href="/" class="nav-logo w-20 md:w-40 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-green-500 ">
+    <a href="/" class="nav-logo">
       <img src="{{ site.data.settings.branding.nav_logo_image }}" alt="{{site.data.settings.branding.site_title}} logo" class="object-contain h-full w-full">
     </a>
     <!-- Full nav -->
     <nav id="nav-menu" class="hidden sm:flex flex-grow flex-col sm:flex-row justify-end items-center gap-12 sm:gap-4 lg:gap-8">
       {% for link in site.data.settings.navigation.menus %}
       {% if link.style_as_button %}
-      <a href="{{link.url}}" class="btn-solid btn-default">
+      <a href="{{link.url}}" class="btn-highlight btn-default">
         {{link.name}}
       </a>    
       {% elsif link.is_dropdown %}
       <div class="dropdown relative inline-block text-left">
         <div>
-          <button type="button" class="font-body inline-flex justify-center w-full text-sm md:text-base tracking-wider text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-green-500 hover:text-green-600 transition-colors" id="menu-button" aria-expanded="true" aria-haspopup="true" >
+          <button type="button" class="dropdown-button" id="{{link.name | downcase | replace: ' ', '-'}}" aria-expanded="true" aria-haspopup="true">
             {{link.name}}
             <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
               aria-hidden="true">
@@ -24,11 +24,8 @@
             </svg>
           </button>
         </div>
-        <div
-          class="dropdown-menu transition-all origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50"
-          role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-          <div class="py-1" role="none">
-            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+        <div class="dropdown-menu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+          <div class="py-1" role="none">            
             {% for menu in link.submenus %}
             <a href="{{menu.url}}" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">{{menu.name}}</a>
             {% endfor %}
@@ -36,8 +33,7 @@
         </div>
       </div>
       {% else %}
-      <a href="{{link.url}}"
-        class="font-body text-sm md:text-base text-gray-700 hover:text-green-600 tracking-wider transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-green-500 ">
+      <a href="{{link.url}}" class="menu-link">
         {{link.name}}
       </a>
       {% endif %}

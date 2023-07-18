@@ -1,16 +1,36 @@
 {% case include.style %}
-{% when "default" %}
-<a href="{{ condition.url }}" class="condition-card relative rounded-md overflow-hidden">
+{% when "Default" %}
+<a href="{{ condition.url }}" class="default-card condition-card relative rounded-md overflow-hidden">
   <div class="condition-card-bg h-full text-gray-50 shadow-lg group"
     style='background-image: url({% picture direct "{{condition.preview_image | default: "/assets/images/placeholder.jpg"}}" %});'>
-      <h3 class="text-green-200 text-center text-2xl md:text-4xl font-bold mb-6 p-4 md:p-6 relative" >
-        {{ condition.header_title }}
-      </h3>
-    <div class="opacity-70 md:opacity-0 group-hover:opacity-100 transition-all bg-gray-700 h-full">      
+    <h3 class="text-secondary text-center text-2xl md:text-5xl font-bold mb-6 p-4 md:p-6 relative">
+      {{ condition.header_title }}
+    </h3>
+    <div class="opacity-70 md:opacity-0 group-hover:opacity-100 transition-all bg-main h-full">
       <p class="text-gray-50 text-sm p-4 md:p-6 relative">
         {{ condition.short_description | truncate: 80 | append: '[...]'}}
       </p>
     </div>
+  </div>
+</a>
+{% when "Icons" %}
+<a href="{{ condition.url }}"
+  class="icons-card condition-card relative rounded-md overflow-hidden border-2 border-gray-200 bg-gray-100 shadow-sm">
+  <div class="h-72 condition-image bg-top bg-cover bg-no-repeat"
+    style='background-image: url({% picture direct "{{condition.preview_image | default: "/assets/images/placeholder.jpg"}}" %});'>    
+  </div>
+  <div class="condition-info transform -translate-y-12">
+    <div class="condition-icon h-24 w-24 p-4 mx-auto rounded-full border-2 border-gray-100 bg-sandy-rose">
+      {% assign icon_code = condition.chiro_icon | append: "" %}
+      {% include chiro-icons.html icon=icon_code fill_color="whitesmoke" classes="object-contain"%}
+    </div>
+    <h3
+      class="condition-title text-unity-blue text-center text-2xl md:text-3xl font-normal p-4 relative group-hover:text-fresh-blue"">
+        {{ condition.header_title }}
+      </h3>    
+      <p class=" text-main text-base text-center p-4 relative ">
+        {{ condition.short_description | truncate: 180 | append: '[...]'}}
+      </p>                
   </div>
 </a>
 {% endcase %}

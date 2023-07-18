@@ -27,19 +27,33 @@
 
 .btn-solid {
   @apply 
-  bg-green-700
+  bg-accent
   text-gray-50
-  hover:bg-green-600
+  hover:opacity-75;
 }
 
 .btn-light {
   @apply
   bg-gray-200
-  text-green-700
-  hover:bg-gray-300;
+  text-accent
+  hover:bg-gray-400;
 } 
-
-
+.btn-highlight {
+  @apply
+  bg-highlight
+  text-gray-50
+  hover:opacity-80;
+}
+.menu-link {
+  @apply
+  font-body text-sm md:text-base text-gray-700 hover:text-accent tracking-wider transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-highlight 
+}
+.dropdown-button {
+  @apply font-body inline-flex justify-center w-full text-sm md:text-base tracking-wider text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-highlight hover:text-accent transition-colors
+}
+.dropdown-menu {
+  @apply transition-all origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50;
+}
 .dropdown:focus-within,
 .dropdown:focus {
   .dropdown-menu {
@@ -168,4 +182,8 @@ svg#burger-icon.active {
 .inactive {
   @apply h-0;
   @apply opacity-0;  
+}
+.nav-logo {
+  @apply
+   w-20 md:w-40 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-highlight 
 }

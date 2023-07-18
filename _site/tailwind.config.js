@@ -17,7 +17,7 @@ module.exports = {
       colors: {
         'main': customTheme.colors.main_color,
         'secondary': customTheme.colors.secondary_color,
-        'tertiary': customTheme.colors.tertiary_color,
+        'accent': customTheme.colors.accent_color,
         'highlight': customTheme.colors.highlight_color,
         'shade': customTheme.colors.highlight_shade_color
       }      

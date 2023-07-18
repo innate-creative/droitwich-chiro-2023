@@ -1,10 +1,10 @@
 general:
-  site_url: 'https://chiro-modern.innatewebsites.com'
-  address: 1 Main Street, 50555
-  address_url: 'https://goo.gl/maps/RsiRVFJAKbnb3mCt7'
-  google_maps_embed_url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.7374875661712!2d-94.35328258482414!3d32.53315748104622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8636f68c7e8fffff%3A0xfb30ff7a5d76ac96!2s1301%20E%20End%20Blvd%20S%20Suite%20C%2C%20Marshall%2C%20TX%2075670%2C%20USA!5e0!3m2!1sen!2sbr!4v1635976855019!5m2!1sen!2sbr'
-  email: 'support@innatewebsites.com'
-  phone: 555-555-5555
+  site_url: 'https://droitwichchiro.com'
+  address: 'Gaudet Luce Leisure Complex, 2 Middle Lane, Droitwich WR9 7JR, United Kingdom'
+  address_url: 'https://goo.gl/maps/5P3HRqoJBcniB49UA'
+  google_maps_embed_url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.308651707626!2d-2.131519222739017!3d52.25593997199317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870ee77ee2db79b%3A0xda1e6fdf20451880!2sDroitwich%20Back%20%26%20Neck%20Clinic%20-%20Chiropractor!5e0!3m2!1sen!2sbr!4v1689690330301!5m2!1sen!2sbr'
+  email: '#'
+  phone: +441905798226
   social:
     - channel: "Facebook"
       add_to_chat_bubble: false
@@ -31,9 +31,9 @@ opening_hours:
   - day: Sunday
     hours: Closed
 branding:
-  site_title: Chiro Website Template
-  nav_logo_image: /assets/images/chiro-services-logo.svg
-  footer_logo_image: /assets/images/chiro-services-logo.svg
+  site_title: Droitwich Back and Neck Clinic
+  nav_logo_image: /assets/images/droitwich-logo-final.png
+  footer_logo_image: /assets/images/droitwich-logo-white.png
   preview_image: /assets/images/logo.png
 navigation:
   menus:
@@ -103,9 +103,8 @@ configuration:
   google_tag_manager_id:
   head_code_block: >-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet preload" as="style" crossorigin="anonymous" type="text/css">
-   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Questrial&display=swap" rel="stylesheet preload" as="style" crossorigin="anonymous" type="text/css">       
   body_code_block: >-
 
   custom_css_code_block: >-

@@ -3,6 +3,7 @@ layout: conditions
 index: 2
 title: Neck Pain
 header_title: Neck Pain
+chiro_icon: 10
 header_image: /assets/images/healthcare-websites-innate-creative-00004.jpg
 preview_image: /assets/images/healthcare-websites-innate-creative-00004.jpg
 alt_text:
