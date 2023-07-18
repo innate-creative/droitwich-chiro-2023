@@ -1,6 +1,15 @@
 general:
   site_url: 'https://droitwichchiro.com'
-  address: 'Gaudet Luce Leisure Complex, 2 Middle Lane, Droitwich WR9 7JR, United Kingdom'
+  address:
+    street_address: '2 Middle Lane'
+    reference: 'Gaudet Luce Leisure Complex'
+    town_or_city: Droitwich
+    state_or_province: England
+    post_code: WR9 7JR
+    country: United Kingdom
+    geo_coordinates:
+      latitude: 52.335775161621484 
+      longitude: -2.117222307979403
   address_url: 'https://goo.gl/maps/5P3HRqoJBcniB49UA'
   google_maps_embed_url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.308651707626!2d-2.131519222739017!3d52.25593997199317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870ee77ee2db79b%3A0xda1e6fdf20451880!2sDroitwich%20Back%20%26%20Neck%20Clinic%20-%20Chiropractor!5e0!3m2!1sen!2sbr!4v1689690330301!5m2!1sen!2sbr'
   email: '#'
@@ -17,19 +26,26 @@ general:
       url: 'https://m.me'
 opening_hours:
   - day: Monday
-    hours: 8am - 5pm
+    opens: 9:45am
+    closes: 6:30pm
   - day: Tuesday
-    hours: 8am - 5pm
+    opens: 9:45am
+    closes: 6:30pm
   - day: Wednesday
-    hours: 8am - 5pm    
+    opens: 9:45am
+    closes: 6:30pm
   - day: Thursday
-    hours: 8am - 5pm
+    opens: 9:45am
+    closes: 6:30pm
   - day: Friday
-    hours: 8am - 5pm    
+    opens: Closed
+    closes: Closed
   - day: Saturday
-    hours: Closed  
+    opens: Closed  
+    closes: Closed  
   - day: Sunday
-    hours: Closed
+    opens: Closed  
+    closes: Closed
 branding:
   site_title: Droitwich Back and Neck Clinic
   nav_logo_image: /assets/images/droitwich-logo-final.png
@@ -97,14 +113,14 @@ navigation:
         - name:
           url:
 seo:
-  site_description_text: 
+  site_description_text: Local chiropractor serving the Droitwich, Worcester and Bromsgrove communities.
   keywords: []
 configuration:
   google_tag_manager_id:
   head_code_block: >-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Questrial&display=swap" rel="stylesheet preload" as="style" crossorigin="anonymous" type="text/css">       
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Questrial&display=swap" rel="stylesheet preload" as="style" crossorigin="anonymous" type="text/css">
   body_code_block: >-
 
   custom_css_code_block: >-

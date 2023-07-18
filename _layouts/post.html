@@ -33,27 +33,8 @@ page_scripts_code_block: >-
       {% include components/share-menu.html %}
     </div>
   </main>
-  <aside class="flex-shrink-0 hidden lg:block sticky top-0">    
-    <div class="opening-hours p-4 md:p-8 bg-gray-200 rounded-md">
-      <h3 class="text-lg text-green-600 mb-4 font-heading">
-        Opening Hours
-      </h3>
-      <table class="mb-4">
-        {% for schedule in site.data.settings.opening_hours %}
-        <tr class="border-separate">
-          <td class="text-gray-700 font-semibold text-sm font-light pr-4">
-            {{ schedule.day }}
-          </td>
-          <td class="text-gray-700 text-sm font-light text-right pl-4">
-            {{ schedule.hours }}
-          </td>
-        </tr>
-        {% endfor %}
-      </table>
-      <a href="/book-online" class="inline-block btn-solid btn-small">
-        Book now
-      </a>
-    </div>
+  <aside class="flex-shrink-0 hidden lg:block top-0">    
+    {% include components/opening-hours.html %}
   </aside>
 </section>
 <section class="container mx-auto mb-6 md:mb-24 px-4 md:px-0">

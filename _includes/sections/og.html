@@ -33,4 +33,58 @@
 <meta itemprop="description" name="description"
   content="{% if page.description %}{{ page.description_text | truncate: 160 }} {% else %} {{ site.data.settings.seo.site_description_text | truncate: 160  }} {% endif %}" />
 
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "{{site.data.settings.general.site_url}}",
+    "name": "{{site.data.settings.branding.site_title}}",
+    "description": "{{site.data.settings.seo.site_description_text}}",
+    "url": "{{site.data.settings.general.site_url}}",
+    "telephone": "{{site.data.settings.general.phone}}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{site.data.settings.general.address.reference}}, {{site.data.settings.general.address.street_address}}",
+      "addressLocality": "{{site.data.settings.general.address.town_or_city}}",
+      "addressRegion": "{{site.data.settings.general.address.state_or_province}}",
+      "postalCode": "{{site.data.settings.general.address.post_code}}",
+      "addressCountry": "{{site.data.settings.general.address.country}}"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "{{site.data.settings.general.geo_coordinates.latitude}}",     
+      "longitude": "{{site.data.settings.general.geo_coordinates.longitude}}"
+    },
+  "openingHoursSpecification": [
+  {% for schedule in site.data.settings.opening_hours %}
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "{{schedule.day}}",
+      "opens": "{{schedule.opens}}",
+      "closes": "{{schedule.closes}}"
+    }{% unless forloop.last %},{%endunless%}
+    {% endfor %}
+    ],
+    "image": "https://www.examplechiropracticclinic.com/images/logo.jpg",
+    "priceRange": "$$",
+    "currenciesAccepted": "GBP",
+    "paymentAccepted": "Cash, Credit Card",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": "40.7128",   // Replace with your clinic's latitude
+        "longitude": "-74.0060"  // Replace with your clinic's longitude
+      },
+      "geoRadius": "50.0",        // Adjust the radius based on your service area
+      "description": "Service area within a 50-mile radius"
+    },
+    "sameAs": [
+      "https://www.facebook.com/examplechiropracticclinic",
+      "https://twitter.com/examplechiro",
+      "https://www.instagram.com/examplechiropracticclinic"
+    ]
+  }
+  </script>
+
 <link rel="canonical" href="{{site.data.settings.general.site_url}}{{page.url}}">

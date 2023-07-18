@@ -40,7 +40,7 @@ Due to the varying nature of back pain, there are many potential differential di
 - Underlying disease or pathology (rare)
 
 ## Treating Back Pain and Sciatica:
-Here at (Insert Practice Name) we take a holistic approach to treating conditions of the spine. We focus on the entire neuromusculoskeletal system, rather than simply the injury site. This includes the spine as a whole, extremity joints (hip, knee, etc), muscles, ligaments, tendons, as well as the nervous system.
+Here at Droitwich Neck & Back Clinic we take a holistic approach to treating conditions of the spine. We focus on the entire neuromusculoskeletal system, rather than simply the injury site. This includes the spine as a whole, extremity joints (hip, knee, etc), muscles, ligaments, tendons, as well as the nervous system.
 
 >The first step in helping you manage and prevent your problem is to ensure we have an accurate diagnosis. We achieve this through a comprehensive clinical history, thorough physical examination including; neurological, orthopaedic, and musculoskeletal tests, and possibly further diagnostic investigations such as X-Rays (if required).
 

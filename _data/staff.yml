@@ -1,6 +1,19 @@
 team_members:
-  - name: Dr. Joe Doe
-    role: Chiropractor
-    bio: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto voluptatibus numquam, deleniti debitis dignissimos culpa assumenda atque accusamus doloribus beatae corporis quam quaerat neque, ullam dolorum dolores consequatur dicta. Adipisci.
+  - name: Dr. Andrew Robson
+    role: BSC (HONS) MCHIRO
+    bio_html: >-
+      <p>Andrew initially qualified as a chiropractor because he wanted to help improve other people’s lives in the same way that a chiropractor had improved his. Several years of competitive rowing, including international events, had left him with regular back pain and discomfort.</p>
+      <br>
+      <p>After putting up with it for years, he could take no more and booked to see a chiropractor, but had only modest expectations. To his surprise, the chiropractor was able to stop the pain and discomfort which had been felt especially when sitting and driving. He was also encouraged to become more active and maintain a healthier lifestyle, which he has now done for eleven years.</p>
+      <br>
+      <p>Andrew was so inspired by what happened in his own life, he eventually decided to take the plunge by turning his back on a career in advertising, and going back to university and training to become a chiropractor himself. This was the start of over five years of study and practice in helping the body heal and improve function and performance. This included work with the Cardiff City FC youth academy studying the rate and incidence of knee injuries with the goal of future prevention.</p>
+      <br>
+      <p>After qualifying as a chiropractor, Andrew worked initially in the south-east and for two years in one of the busiest chiropractic clinics in the UK, in Swindon. Andrew returned to his hometown of Droitwich in late 2015 and founded Droitwich Back & Neck Clinic in January 2016.</p>
+      <br>
+      <p>Andrew treats people with a range of problems including low back pain, neck and shoulder pain, headaches, and pain in the peripheral joints of the body. Andrew’s patients vary in age from 6 years old, all the way up to 86 years old. The problems they come to see Andrew about range from short-term injuries to far more long-term degenerative conditions.</p>
+      <br>
+      <p>Andrew enjoys helping improve people’s lives but is also interested in finding out how and why injuries occur and what prevents an individual from recovering, in order that he can help people avoid long-term pain and discomfort in the first place and enjoy their lives to the full.</p>
+      <br>
+      <p>Andrew prides himself on using the best technology for both diagnosis and treatment as he has found this aids his patients in achieving their goals sooner.</p>
     profile_image: /assets/images/male-profile-placeholder.jpeg
   
