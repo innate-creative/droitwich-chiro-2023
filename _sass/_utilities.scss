@@ -205,9 +205,12 @@
       list-inside;
       li {
         @apply
+          text-base
+          lg:text-lg
+          text-gray-500
           list-disc
-          font-normal
-          italic;
+          leading-10
+          font-light;
       }
   }
 }

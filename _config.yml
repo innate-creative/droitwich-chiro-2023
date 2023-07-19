@@ -96,6 +96,9 @@ background_colors:
   - "bg-green-900"
 
 collections:
+  pages:
+    output: true
+    permalink: /:path
   posts:
     output: true
     sort_by: index

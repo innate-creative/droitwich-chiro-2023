@@ -19,7 +19,7 @@
     </div>
     <p class="text-sm mb-4">{{ post.short_description | truncate: 200 }}
     </p>
-    <a href="{{ post.url | relative_url }}" class="btn-default btn-highlight text-center">
+    <a href="{{ post.url | relative_url }}" class="btn-default btn-highlight text-center" aria-label="read article titled {{post.title}}">
       Read article
     </a>
   </div>

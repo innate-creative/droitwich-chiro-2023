@@ -6,7 +6,7 @@ keywords:
 feature_image: /assets/images/droitwich-instructions.jpg
 category: Spondylosis
 author: Andrew Robson
-preview_image: /assets/images/blog/droitwich-instructions.jpg
+preview_image: /assets/images/droitwich-instructions.jpg
 ---
 
 **Chiropractic Treatment Can Help Ease the Pain of Spondylosis**
