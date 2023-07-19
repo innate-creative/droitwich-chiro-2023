@@ -2,11 +2,12 @@
 layout: conditions
 index: 7
 title: Dizziness
+chiro_icon: 6
 header_title: Dizziness & Vertigo
 header_image: /assets/images/healthcare-websites-innate-creative-00007.jpg
 preview_image: /assets/images/healthcare-websites-innate-creative-00007.jpg
 alt_text:
-short_description: Here at Chiropractic Services we take a holistic approach to treatin dizziness & vertigo. We focus on the entire neuromusculoskeletal system including the spine as a whole, extremity joints, muscles, ligaments, tendons, as well as the nervous system. We also focus heavily on creating lifestyle changes that can improve and prevent future dizziness.
+short_description: Here at Droitwich Chiropractic  we take a holistic approach to treatin dizziness & vertigo. We focus on the entire neuromusculoskeletal system including the spine as a whole, extremity joints, muscles, ligaments, tendons, as well as the nervous system. We also focus heavily on creating lifestyle changes that can improve and prevent future dizziness.
 description_text:
 keywords: []
 ---

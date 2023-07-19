@@ -91,6 +91,23 @@
     @apply font-light text-right pl-4;
   }
 }
+.opening-section {
+  ol, ul {
+    li {
+      @apply font-bold list-inside text-lg;
+    }
+  }
+  ol {
+    li {
+      @apply list-decimal;
+    }
+  }
+  ul {
+    li {
+      @apply list-disc;
+    }
+  }
+}
 
 .atf-bg,
 .atf-bg-no-overlay,
@@ -136,8 +153,8 @@
   }  
   h2 {
     @apply
-      text-3xl
-      md:text-5xl
+      text-2xl
+      md:text-4xl
       font-bold
       text-accent
       mb-6;

@@ -10,7 +10,7 @@ This boilerplate uses the following dependencies & plugins:
 - TailwindCSS (2.1.1)
 - jekyll-sitemap
 - jekyll-feed
-- jekyll-webp (1.0)
+- jekyll_picture_tag
 - jekyll-postcss
 - jekyll-purgecss
   
@@ -47,27 +47,4 @@ Another example:
     </button>
   {% endunless %}
 {% endfor %}
-```
-
-## Cookie Banner (GDPR)
-
-You must include the `cookie-banner.html` file and the `cookie-prefs.html` on the base layout and enable the `cookie-settings-v2.js` script for it to work.
-
-The cookie script is GDPR-EU-compliant and stores preferences on the client-side `sessionStorage`. When the page is refreshed or changed, the cookie banner will re-render as per GDPR-EU requirements. You can tweak the JS file to remember preferences when refreshing, to hide the cookie banner but do it at your own discretion. `sessionStorage` is cleared when the tab is closed.
-
-If required, add markup on the `cookies-banner.html` file and define variables on the `cookie-settings-v2.js` file.
-
-## The WebP plugin
-
-The `jekyll-webp` plugin generates a `.webp` version of images inside the `/assets/images` folder. The plugin can be configured on the `_config.yml` file.
-
-Simply add the `<img>` tag and add the `srcset` attribute to it, referencing the image's path but with the `.webp` extension.
-
-Examples: 
-```
-<!-- default img tag -->
-<img src="/assets/images/image.jpg" srcset="/assets/images/image.webp">
-
-<!-- using Liquid -->
-<img src="{{page.image}}" srcset="{{page.image | replace: "jpg", "webp"}}">
 ```

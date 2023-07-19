@@ -2,6 +2,7 @@
 layout: conditions
 index: 8
 title: Disc Injuries
+chiro_icon: 21
 header_title: Disc Injuries
 header_image: /assets/images/healthcare-websites-innate-creative-00005.jpg
 preview_image: /assets/images/healthcare-websites-innate-creative-00005.jpg

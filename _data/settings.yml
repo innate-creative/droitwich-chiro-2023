@@ -67,6 +67,15 @@ navigation:
       submenus:              
         - name:
           url:
+    - name: Chiropractic
+      url: '#'
+      is_dropdown: true
+      style_as_button: false
+      submenus:              
+        - name: Your First Visit
+          url: /new-patients
+        - name: Holistic Health Process
+          url: /holistic-health-process
     - name: Conditions
       url: '/conditions'
       is_dropdown: true

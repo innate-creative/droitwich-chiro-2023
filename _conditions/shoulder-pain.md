@@ -2,6 +2,7 @@
 layout: conditions
 index: 3
 title: Shoulder Pain
+chiro_icon: 30
 header_title: Shoulder Pain
 header_button_text:
 header_button_url: 

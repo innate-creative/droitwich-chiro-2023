@@ -2,11 +2,12 @@
 layout: conditions
 index: 1
 title: Chiropractic for Back Pain
+chiro_icon: 4
 header_title: Back Pain
 header_image: /assets/images/healthcare-websites-innate-creative-00006.jpg
 preview_image: /assets/images/healthcare-websites-innate-creative-00006.jpg
 alt_text:
-short_description: 'Back pain and sciatica are one of the most common complaints we see as chiropractors here at Chiropractic Services. It is estimated 70%-90% of the population will experience an episode of back pain at some stage in their life.'
+short_description: 'Back pain and sciatica are one of the most common complaints we see as chiropractors here at Droitwich Chiropractic . It is estimated 70%-90% of the population will experience an episode of back pain at some stage in their life.'
 description_text:
 keywords: []
 ---

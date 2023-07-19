@@ -43,23 +43,23 @@ page_scripts_code_block: |-
   </div>  
 </main>
 <section class="container mx-auto">
-  <div class="grid grid-cols-1 md:grid-cols-2">
-    <div class="col-span-1">
-      <p class="editable">
-        Living a healthy life means being pain free, it also means having the ability to fully participate in life. Our Holistic Health Process helps you get out of pain and achieve long-term wellbeing. We have 2 goals for you:      
-      1. Get you feeling and moving better quickly
-      
-      2. Improve the function of your body so you can continue to do what you love.
-      
-      We achieve these goals by focusing on rehabilitation, exercise, good nutrition and stress reduction as essential
-      adjuncts to chiropractic treatment.
-      
-      The Holistic Health Process ensures that you receive a far longer term benefit from you chiropractic treatment - this
-      way you get the most out of life.</p>
+  <div class="opening-section text-center py-8 md:py-12 px-4 md:px-0">    
+    <div class="w-40 mx-auto">
+      <img src="/assets/graphics/icon-15.svg" alt="feel good icon" class="object-cover w-full h-full">
     </div>
-    <div class="col-span-1"></div>
+    <h2 class="section-heading editable">Back to your best self.</h2>
+    <p class="editable">
+      Living a healthy life means being pain free. It also means having the ability to fully participate in life. At Droitwich Chiropractic, we implement the Holistic Health Process helps you get out of pain and achieve long-term wellbeing. We have 2 goals for you:
+    </p>
+    <br>
+    <ol>
+      <li>Get you feeling and moving better quickly</li>
+      <li>Improve the function of your body so you can continue to do what you love.</li>
+    </ol>
+    <div class="py-10">
+      <a href="/new-patients" class="btn-highlight btn-default">Our Holistic Health Process</a>
+    </div>
   </div>
-
 </section>
 
 <section id="conditions" class="bg-gray-100 relative">
@@ -80,10 +80,6 @@ page_scripts_code_block: |-
     </div>
   </div>
 </section>
-
-{% for member in site.data.staff.team_members %}
-{% include components/team-profiles.html profile_style="Round" %}
-{% endfor %}
 <section class="bg-gray-200">
   <div class="default-container py-24 text-center">
     <h2 class="section-heading text-main editable">
@@ -152,8 +148,11 @@ page_scripts_code_block: |-
     </div>
   </div>
 </section>
+{% for member in site.data.staff.team_members %}
+{% include components/team-profiles.html profile_style="Round" %}
+{% endfor %}
 {% include sections/cta.html %}
-<section id="posts" class="posts bg-gray-200 py-8 md:py-16 px-4 sm:px-0">
+<!-- <section id="posts" class="posts bg-gray-200 py-8 md:py-16 px-4 sm:px-0">
   <div class="container mx-auto">
     <h2 class="editable section-heading text-main">
       Educational Resources
@@ -170,7 +169,7 @@ page_scripts_code_block: |-
       {% endfor %}
     </div>
   </div>
-</section>
+</section> -->
 <section id="location">
   {% include sections/map.html %}
 </section>

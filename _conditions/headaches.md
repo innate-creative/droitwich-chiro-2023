@@ -2,6 +2,7 @@
 layout: conditions
 index: 6
 title: Headaches
+chiro_icon: 17
 header_title: Headaches
 header_image: /assets/images/healthcare-websites-innate-creative-00009.jpg
 preview_image: /assets/images/healthcare-websites-innate-creative-00009.jpg
