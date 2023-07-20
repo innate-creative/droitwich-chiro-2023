@@ -192,9 +192,8 @@ p {
   }
   p {
     @apply
-      text-sm
-      md:text-base
-      lg:text-lg
+      text-base
+      md:text-lg      
       font-light
       text-gray-700
       mb-6;
