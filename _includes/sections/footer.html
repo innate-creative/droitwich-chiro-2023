@@ -1,20 +1,18 @@
 <footer class="bg-gray-700 py-12 relative">
   <div class="container mx-auto grid grid-cols-6 gap-6 md:gap-4 justify-center items-center md:justify-between">
-    <div
-      class="col-span-6 md:col-span-3 md:order-1 lg:col-span-2 lg:order-none flex flex-col items-center justify-center md:items-start">
+    <div class="col-span-6 md:col-span-3 md:order-1 lg:col-span-2 lg:order-none flex flex-col items-center justify-center md:items-start">
       <div class="footer-logo w-32 mb-6">
         <img src="{{ site.data.settings.branding.footer_logo_image }}"
           alt="{{site.data.settings.branding.site_title}} logo" class="object-contain w-32 h-full" loading="lazy">
       </div>
-      <address class="text-gray-50 font-light text-sm font-body not-italic mb-2 hover:text-accent transition-colors">
+      <address class="footer-address">
         <a href="{{site.data.settings.general.address_url}}" target="_blank" rel="noopener noreferrer">
             {{site.data.settings.general.address.reference}}, {{site.data.settings.general.address.street_address}},
             {{site.data.settings.general.address.town_or_city}}, {{site.data.settings.general.address.post_code}},
             {{site.data.settings.general.address.state_or_province}}
         </a>
       </address>
-      <a href="tel:+{{site.data.settings.general.phone}}"
-        class="text-gray-50 font-light text-sm font-body not-italic hover:text-accent transition-colors">
+      <a href="tel:+{{site.data.settings.general.phone}}" class="footer-phone">
         {{site.data.settings.general.phone}}
       </a>
     </div>

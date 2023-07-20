@@ -77,6 +77,12 @@
 .footer-link {
   @apply text-gray-50 font-light text-xs font-body inline-block hover:text-accent transition-colors;
 }
+.footer-address {
+  @apply text-gray-50 font-light text-sm font-body not-italic mb-2 hover:text-accent transition-colors text-center md:text-left;
+}
+.footer-phone {
+  @apply text-gray-50 font-light text-sm font-body not-italic hover:text-accent transition-colors;
+}
 .footer-schedule {
   &--day,
   &--hours {
