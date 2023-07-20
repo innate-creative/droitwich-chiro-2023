@@ -2,7 +2,7 @@
 {% when "Default" %}
 <section class="team-profile {% cycle 'bg-gray-200','bg-gray-50' %}">
   <div class="container mx-auto grid grid-cols-2 gap-8 px-4 md:px-0 ">
-    <div class="col-span-1 py-4 md:py-8 flex flex-col justify-center {% cycle 'order-1','order-2' %}">
+    <div class="col-span-1 py-4 md:py-8 lg:py-16 flex flex-col justify-center {% cycle 'order-1','order-2' %}">
       <h2 class="text-accent font-semibold text-2xl md:text-5xl mb-2">
         {{ member.name }}
       </h2>
@@ -20,7 +20,7 @@
   </div>
 </section>
 {% when "Round" %}
-<section class="team-profile bg-light">
+<section class="team-profile bg-light round-profile">
   <div class="container mx-auto py-20 flex flex-col items-center justify-between">    
     <h2 class="editable section-heading text-main">
       Meet the Doctor
@@ -38,8 +38,8 @@
           {{ member.name }}
         </h2>
         <h3 class="text-highlight text-xl font-body font-semibold mb-6">{{ member.role }}</h3>
-        <p class="editable text-gray-700 font-body font-light text-base md:text-lg md:mx-auto">
-          {{member.bio_html | truncate: 300}}
+        <p class="editable ">
+          {{member.bio_html | truncate: 285}}
         </p>
         <div class="text-center inline-block py-4">
           <a href="/about-us" class="btn-default btn-solid">About Dr. Andrew Robson</a>

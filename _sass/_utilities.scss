@@ -11,7 +11,6 @@
     tracking-wider
     transition-all; 
 }
-
 .btn-default {
   @apply
     p-2
@@ -27,14 +26,12 @@
 .btn-footer {
   @apply inline-block text-xs p-2 md:px-1 rounded-md uppercase tracking-wider transition-colors;
 }
-
 .btn-solid {
   @apply 
   bg-accent
   text-gray-50
   hover:opacity-75;
 }
-
 .btn-light {
   @apply
   bg-gray-200
@@ -47,6 +44,7 @@
   text-gray-50
   hover:opacity-80;
 }
+
 .menu-link {
   @apply
   font-body text-sm md:text-base text-gray-700 hover:text-accent tracking-wider transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-highlight 
@@ -91,6 +89,11 @@
     @apply font-light text-right pl-4;
   }
 }
+
+p {
+  @apply text-base md:text-lg lg:text-xl;
+}
+
 .opening-section {
   ol, ul {
     li {
@@ -229,4 +232,16 @@ svg#burger-icon.active {
 .nav-logo {
   @apply
    w-20 md:w-40 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-highlight 
+}
+.round-profile {
+  p {
+    @apply text-gray-700 font-body font-light text-sm md:text-base md:mx-auto;
+  }
+
+}
+.process-heading {
+  @apply text-2xl text-highlight uppercase font-bold mb-4;
+}
+.process-paragraph {
+  @apply text-gray-700 font-light text-base;
 }
