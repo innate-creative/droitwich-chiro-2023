@@ -125,6 +125,10 @@ p {
   background-repeat: no-repeat;
 }
 
+.atf-main-heading {
+  @apply text-4xl md:text-6xl font-bold mb-6 text-accent tracking-wide font-body text-right;
+  text-shadow: 3px 2px 15px rgb(51, 51, 51);
+}
 .atf-bg {  
   &::before {
     content: '';
@@ -231,17 +235,38 @@ svg#burger-icon.active {
 }
 .nav-logo {
   @apply
-   w-20 md:w-40 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-highlight 
+   w-20 md:w-40 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-highlight;
 }
 .round-profile {
   p {
     @apply text-gray-700 font-body font-light text-sm md:text-base md:mx-auto;
   }
-
 }
 .process-heading {
   @apply text-2xl text-highlight uppercase font-bold mb-4;
 }
 .process-paragraph {
   @apply text-gray-700 font-light text-base;
+}
+
+.custom-shape-divider-bottom-1689834030 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1689834030 svg {
+  position: relative;
+  display: block;
+  width: calc(165% + 1.3px);
+  height: 59px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1689834030 .shape-fill {
+  fill: #FFFFFF;
 }
