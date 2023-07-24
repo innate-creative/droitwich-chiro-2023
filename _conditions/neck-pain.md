@@ -12,7 +12,7 @@ description_text:
 keywords: ['neck pain', 'treatment for neck pain']
 ---
 ## Do you need help with neck pain?
-Here at (Insert Pratice Name) we understand how debilitating neck pain can be, which is why we are dedicated to helping you recover naturally.
+Here at Droitwich Back and Neck Clinic we understand how debilitating neck pain can be, which is why we are dedicated to helping you recover naturally.
 
 ### Do you experience any of the following?
 - Stiffness in your neck or shoulders?
@@ -34,10 +34,10 @@ Neck pain can be extremely debilitating and disruptive to your day-to-day activi
 - Sporting injuries and trauma
 - Overuse and repetitive strain injuries
 
-(Insert Pratice Name) can help you heal!
+Droitwich Back and Neck Clinic can help you heal!
 
 ### Treating neck pain:
-Here at (Insert Pratice Name) we take a holistic approach to treating neck pain. We focus on the entire neuromusculoskeletal system, rather than simply the injury site. This includes the spine as a whole, extremity joints (shoulder, elbow etc), muscles, ligaments, tendons, as well as the nervous system.
+Here at Droitwich Back and Neck Clinic we take a holistic approach to treating neck pain. We focus on the entire neuromusculoskeletal system, rather than simply the injury site. This includes the spine as a whole, extremity joints (shoulder, elbow etc), muscles, ligaments, tendons, as well as the nervous system.
 
 >The first step in helping you manage and prevent your problem is to ensure we have an accurate diagnosis. We achieve this through a comprehensive clinical history, thorough physical examination including; neurological, orthopaedic, and musculoskeletal tests, and possibly further diagnostic investigations such as X-Rays (if required).
 

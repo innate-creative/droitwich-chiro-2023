@@ -12,7 +12,7 @@ description_text:
 keywords: []
 ---
 ## Are you suffering from dizziness or vertigo?
-Here at (Insert Pratice Name) we understand how debilitating this can be, which is why we are dedicated to helping you recover naturally.
+Here at Droitwich Back and Neck Clinic we understand how debilitating this can be, which is why we are dedicated to helping you recover naturally.
 
 ### Do you experience the following sensations?:
 - Intense feelings of dizziness or spinning?
@@ -30,7 +30,7 @@ You may be wondering, why would I come to see a chiropractor if I am dizzy or ex
 Great question! Spinal alignment problems (especially those relating to the upper neck) may cause feelings of dizziness, this is termed cervicogenic dizziness. This is due to the close relationship between the structures and nerves of the cervical spine and the balance receptors in the brain. That being said there are many other possible causes of dizziness and vertigo. Some may be more serious than others. It is for this reason that an accurate diagnosis is critical. If we determine the cause of your dizziness is more serious in nature, we will be sure to refer you to the right healthcare providers.
 
 ### Treating dizziness and vertigo:
-Here at (Insert Pratice Name) we take a holistic approach to treating dizziness and vertigo. We focus on the entire neuromusculoskeletal system including the spine as a whole, extremity joints, muscles, ligaments, tendons, as well as the nervous system. We also focus heavily on creating lifestyle changes that can improve and prevent future dizziness.
+Here at Droitwich Back and Neck Clinic we take a holistic approach to treating dizziness and vertigo. We focus on the entire neuromusculoskeletal system including the spine as a whole, extremity joints, muscles, ligaments, tendons, as well as the nervous system. We also focus heavily on creating lifestyle changes that can improve and prevent future dizziness.
 
 >The first step in helping you manage your vertigo is to ensure we have an accurate diagnosis. We achieve this through a comprehensive clinical history, thorough physical examination including; neurological, orthopaedic, and musculoskeletal tests, and possibly further diagnostic investigations such as X-Rays (if required).
 

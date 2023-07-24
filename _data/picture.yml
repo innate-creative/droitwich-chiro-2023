@@ -1,6 +1,7 @@
 presets:
   direct:
     markup: direct_url
+    widths: [600, 800, 1200]
     fallback_width: 1200
     fallback_format: webp
   only_srcset:

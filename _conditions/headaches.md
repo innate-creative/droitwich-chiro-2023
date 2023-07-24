@@ -17,7 +17,7 @@ keywords: []
 ---
 ## Are you suffering from headaches or migraines?
 
-Here at (Insert Pratice Name) we understand how debilitating this can be, which is why we are dedicated to helping you recover naturally.
+Here at Droitwich Back and Neck Clinic we understand how debilitating this can be, which is why we are dedicated to helping you recover naturally.
 
 ### Do you experience any of the following?
 - Dull aching pain in your head?
@@ -45,11 +45,11 @@ Due to the close relationship between the nerves of the cervical spine and the h
 - Dysfunction in the cervical spine
 - Underlying disease or pathology (rare)
 
-(Insert Pratice Name) can help!
+Droitwich Back and Neck Clinic can help!
 
 ### Treating headaches and migraines:
 
-Here at (Insert Pratice Name) we take a holistic approach to treating headaches and migraines. We focus on the entire neuromusculoskeletal system including the spine as a whole, extremity joints, muscles, ligaments, tendons, as well as the nervous system. We also focus heavily on creating lifestyle changes that can improve and prevent future headaches. Reducing stress in your life is also a key strategy for long term success.
+Here at Droitwich Back and Neck Clinic we take a holistic approach to treating headaches and migraines. We focus on the entire neuromusculoskeletal system including the spine as a whole, extremity joints, muscles, ligaments, tendons, as well as the nervous system. We also focus heavily on creating lifestyle changes that can improve and prevent future headaches. Reducing stress in your life is also a key strategy for long term success.
 
 >The first step in helping you manage your headaches is to ensure we have an accurate diagnosis. We achieve this through a comprehensive clinical history, thorough physical examination including; neurological, orthopaedic, and musculoskeletal tests, and possibly further diagnostic investigations such as X-Rays (if required).
 

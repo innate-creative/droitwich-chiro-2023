@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<div class="atf-bg py-32 md:py-40 relative mb-8" style="background-image: url({{page.header_image}});">
+<div class="atf-bg py-32 mt-10 md:mt-0 md:py-40 relative mb-8" style='background-image: url({% picture direct "{{page.header_image}}" %});'>
   <div class="container mx-auto text-center mb-4 md:mb-8">
-    <h1 class="text-4xl md:text-6xl font-bold mb-6 editable text-accent relative tracking-wide">
+    <h1 class="condition-atf-heading">
       {{page.header_title}}
     </h1>
   </div> 
@@ -12,8 +12,7 @@ layout: default
   <main class="condition-content pb-12 px-4 lg:px-0">
     <h2 class="small-title">
       Chiropractic Adjustments for {{page.header_title}}
-    </h2>
-    
+    </h2>    
     {{content}}
     {% include components/share-menu.html %}
   </main>
@@ -29,10 +28,6 @@ layout: default
       {% endfor %}
     </nav>
     {% include components/opening-hours.html %}
-  </aside>
-  
-  
-  
+  </aside>  
 </section>
-
 {% include sections/cta.html %}

@@ -146,7 +146,9 @@ p {
     background: linear-gradient(90deg, rgba(55,55,55,1) 0%, rgba(236,236,236,0.44021358543417366) 50%);
   }
 }
-
+.atf-image {
+  @apply rounded-3xl shadow-xl overflow-hidden h-64;  
+}
 .large-curved-bg {
   background-image: url(/assets/graphics/shapes/large-curved-bg.svg);  
 }
@@ -221,7 +223,7 @@ p {
           lg:text-lg
           text-gray-500
           list-disc
-          leading-10
+          md:leading-10
           font-light;
       }
   }
@@ -232,7 +234,7 @@ p {
   }
 }
 svg#burger-icon.active {
-  fill: green;
+  fill: #ee8035;
 }
 .inactive {
   @apply h-0;
@@ -274,4 +276,13 @@ svg#burger-icon.active {
 
 .custom-shape-divider-bottom-1689834030 .shape-fill {
   fill: #FFFFFF;
+}
+@media screen md {
+  .atf-image {
+    height: 500px;
+  }
+}
+.condition-atf-heading {
+  @apply text-4xl md:text-6xl font-bold mb-6 text-accent relative tracking-wide;
+  text-shadow:-2px 2px 3px #374151;
 }
