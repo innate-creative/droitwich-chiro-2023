@@ -20,7 +20,7 @@
       {% for link in site.data.settings.navigation.menus %}
       {% if link.style_as_button %}
       <a href="{{link.url}}"
-        class="btn-footer btn-solid">
+        class="btn-footer btn-highlight">
         {{link.name}}
       </a>
       {% else %}
@@ -30,7 +30,7 @@
       {% endfor %}
     </div>
     <div class="col-span-6 md:col-span-3 md:order-2 md:mb-8 lg:mb-0 lg:col-span-2 lg:order-none">
-      <h3 class="text-center md:text-right text-base text-accent mb-4 font-heading">Opening Hours</h3>
+      <h3 class="text-center md:text-right text-base text-highlight mb-4 font-heading">Opening Hours</h3>
       <table class="mx-auto md:mx-0 md:ml-auto">
         {% for schedule in site.data.settings.opening_hours %}
         <tr class="border-separate">

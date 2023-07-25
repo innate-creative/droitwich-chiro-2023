@@ -18,11 +18,11 @@
 </url>
 <url>
 <loc>http://localhost:4000/conditions/dizziness</loc>
-<lastmod>2023-07-24T16:07:43-03:00</lastmod>
+<lastmod>2023-07-25T10:08:40-03:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/conditions/disc-injuries</loc>
-<lastmod>2023-07-24T16:04:47-03:00</lastmod>
+<lastmod>2023-07-25T10:08:40-03:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/about-us</loc>
@@ -30,7 +30,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/blog</loc>
-<lastmod>2023-07-19T12:40:25-03:00</lastmod>
+<lastmod>2023-07-25T10:08:40-03:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/book-online</loc>
@@ -38,7 +38,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/conditions</loc>
-<lastmod>2023-07-24T15:55:03-03:00</lastmod>
+<lastmod>2023-07-25T10:08:40-03:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/contact</loc>
@@ -46,7 +46,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/faqs</loc>
-<lastmod>2023-07-19T12:40:25-03:00</lastmod>
+<lastmod>2023-07-25T10:08:40-03:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/holistic-health-process</loc>
@@ -54,7 +54,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/new-patients</loc>
-<lastmod>2023-07-19T12:40:25-03:00</lastmod>
+<lastmod>2023-07-25T10:08:40-03:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/blog/dehydration/2018/dehydration-and-back-pain</loc>
@@ -130,6 +130,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
-<lastmod>2023-07-24T15:55:03-03:00</lastmod>
+<lastmod>2023-07-25T10:08:40-03:00</lastmod>
 </url>
 </urlset>
