@@ -278,6 +278,46 @@ svg#burger-icon.active {
 .custom-shape-divider-bottom-1689834030 .shape-fill {
   fill: #FFFFFF;
 }
+
+.custom-shape-divider-bottom-1690316564 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1690316564 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 54px;
+}
+
+.custom-shape-divider-bottom-1690316564 .shape-fill {
+  fill: #f2f2f2;
+}
+.custom-shape-divider-top-1690317038 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1690317038 svg {
+  position: relative;
+  display: block;
+  width: calc(124% + 1.3px);
+  height: 60px;
+}
+
+.custom-shape-divider-top-1690317038 .shape-fill {
+  fill: #F2F2F2;
+}
 @screen md {
   .atf-image {
     height: 500px;

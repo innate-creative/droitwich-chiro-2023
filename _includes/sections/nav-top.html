@@ -1,4 +1,4 @@
-<div class="bg-transparent fixed sm:relative sm:top-0 w-full sm:w-auto z-50 shadow-md">
+<div class="bg-gray-50 fixed sm:relative sm:top-0 w-full sm:w-auto z-50 shadow-md">
   {% include sections/alert-bar.html %}
   <div class="flex items-center justify-between px-4 md:px-0 py-2 md:py-4 container mx-auto">
     <a href="/" class="nav-logo">
@@ -54,9 +54,13 @@
     </a>    
     
     {% else %}    
-      <a href="{{link.url}}" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2 border-gray-300">
-        {{link.name}}
-      </a>    
+      <a href="{{link.url}}" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2 {%if link.is_dropdown %}border-gray-500{%else%} border-gray-300{%endif%}">
+       {{link.name}}{% if link.is_dropdown %} <img src="/assets/graphics/shapes/expand_more_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="inline-block">
+      {%endif%}
+      </a>
+      {% for submenu in link.submenus %}    
+      <a href="{{submenu.url}}" class="text-sm py-1 text-gray-600">{{submenu.name}}</a>
+      {% endfor %}
     {% endif %}
     {% endfor %}  
   </nav>
