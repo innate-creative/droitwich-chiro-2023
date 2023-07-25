@@ -8,6 +8,34 @@ presets:
     markup: naked_srcset
     widths: [360, 800, 1200, 1600]
     formats: webp
+  xxlarge:
+    markup: picture
+    formats: [webp]
+    widths: [1000]
+  xlarge:
+    markup: picture
+    formats: [webp]
+    widths: [800, 600]
+  large:
+    markup: picture
+    formats: [webp]
+    widths: [500]
+  medium:
+    markup: picture
+    formats: [avif, webp]
+    widths: [350]
+  small:
+    markup: picture
+    formats: [avif, webp]
+    widths: [200]
+  xsmall:
+    markup: picture
+    formats: [avif, webp]
+    widths: [150]  
+  thumb:
+    markup: picture
+    formats: [avif, webp]
+    widths: [70]  
   small_logo:
     markup: picture
     widths: [200, 360]  

@@ -1,9 +1,78 @@
 ---
 layout: default
 title: Chiropractic Care - Droitwich Back & Neck Clinic
-short_description:
-header_background_image:
+short_description: What happens when you first visit a chiropractor? We're here to answer some of your questions about your first visit.
+header_background_image: /assets/images/droitwich-consulting-ipad.jpg
 description_text:
+column_sections:
+  - heading: Before you arrive
+    paragraph_html: >-
+      <p>Please arrive ten minutes before your appointment start time in order to fill out a health questionnaire form prior to
+      your consultation.
+      <br><br>
+      It’s best to allow an hour for your initial consultation. This will afford us enough time for a thorough case history
+      and examination to make sure chiropractic treatment is appropriate to your needs.
+      <br><br>
+      Please make yourself familiar with the area and where to park. Directions and parking instructions can be found here.</p>
+    image: /assets/images/droitwich-contact-us.jpg
+    alt_text:
+  - heading: During your consult
+    paragraph_html: >-
+      <p>Your chiropractor will begin by asking you some pertinent questions and listening attentively to what you have to say.
+      If after this stage your problem sounds like something we can help with, then we will, with your permission, proceed to
+      the Chiropractic assessment. Should we feel that you are not suitable for chiropractic care then we will refer you to a
+      GP or a suitable specialist.
+      <br><br>
+      Our assessment procedures have been designed to give us the maximum amount of information with the least amount of
+      discomfort for you, the patient. You may be familiar with some of the tests if you have already consulted your GP or a
+      consultant. Some will be unique to chiropractic.
+      <br><br>
+      Droitwich Back & Neck Clinic use state-of-the-art thermographic and digital equipment to assess tension and range of
+      motion in the spine and extremity joints. This aids us in compiling the most accurate diagnosis, and if appropriate,
+      plan of treatment too. Please read some of our <a href="/faqs">frequently-asked-questions</a> for other common information about consults.</p>
+    image: /assets/images/droitwich-adjusting3.jpg
+    alt_text:
+  - heading: After your initial consult
+    paragraph_html: >-
+      <p>Having listened carefully and examined you appropriately, we will then be able to give you a detailed report on what we
+      have found and how we may be able to help you.<br><br>
+      If appropriate, care may begin on the same day. Sometimes further information is needed in the form of scans or x-rays.
+      At the end of the consultation, we like to allow some time for any questions you may have.<br><br>
+      Do you still have questions? Check out our frequently asked questions or call our friendly staff for further
+      information.</p>
+    image: /assets/images/droitwich-consulting-ipad.jpg
+    alt_text:
 keywords:
+  - what is chiropractic
+  - chiropractic consultation
+  - what does a chiropractor do
 page_scripts_code_block: >-
 ---
+<main class="atf-bg py-32 md:py-40 relative"
+  style='background-image: url({% picture direct "{{page.header_background_image | default: "/assets/images/placeholder.jpg"}}" %});background-attachment:fixed;'>
+  <div class="container mx-auto px-4 md:px-0 py-8 md:py-24">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 editable text-gray-50 relative tracking-wide">
+     Chiropractic Care: <span class="text-highlight">what to expect?</span>
+    </h1>
+    <p class="editable text-gray-50 lg:w-1/2 relative">
+      If improving your health and wellbeing in a supportive caring environment is important to you, you will love
+      Droitwich Back and Neck Clinic. Our team is dedicated to helping you heal from the inside out.
+    </p>
+  </div>
+</main>
+<section class="container mx-auto py-12">
+  {% for section in page.column_sections %}
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8 md:mb-12">
+    <div class="col-span-1 {% cycle 'order-1', 'order-2' %} flex flex-col gap-4 justify-center">
+      <h2 class="section-heading">{{section.heading}}</h2>
+      <div>{{section.paragraph_html}}</div>
+    </div>
+    <div class="col-span-1 {% cycle 'order-2', 'order-1' %} p-6">
+      <div class="rounded-lg overflow-hidden shadow-md">
+        {% picture xlarge "{{section.image | default: '/assets/images/placeholder.jpg' }}" --img alt="{{section.alt_text}}" class="object-cover w-full h-full" %}      
+      </div>
+    </div>    
+  </div> 
+  {% endfor %} 
+</section>
+{% include sections/cta.html %}

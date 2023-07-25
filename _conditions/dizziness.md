@@ -25,7 +25,7 @@ keywords:
   - Non-invasive dizziness treatment
   - Chiropractic treatment for dizziness
 ---
-# **Chiropractic Treatment for Dizziness at Droitwich Back and Neck Clinic**
+## **Chiropractic Treatment for Dizziness at Droitwich Back and Neck Clinic**
 
 Are you tired of feeling dizzy and off-balance, affecting your daily life and well-being? Seek relief and lasting solutions at Droitwich Back and Neck Clinic, where Dr. Andrew Robson, our skilled chiropractor, offers effective and non-invasive chiropractic treatment for dizziness.
 

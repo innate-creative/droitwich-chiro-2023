@@ -16,12 +16,14 @@
     p-2
     md:p-3
     text-sm
-    md:text-base    
+    md:text-base;
+    
 }
 .btn-small {
   @apply
     p-2
-    text-sm
+    text-sm;
+    
 }
 .btn-footer {
   @apply inline-block text-xs p-2 md:px-1 rounded-md uppercase tracking-wider transition-colors;
@@ -237,8 +239,7 @@ svg#burger-icon.active {
   fill: #ee8035;
 }
 .inactive {
-  @apply h-0;
-  @apply opacity-0;  
+  @apply h-0 opacity-0 z-0;
 }
 .nav-logo {
   @apply
@@ -277,7 +278,7 @@ svg#burger-icon.active {
 .custom-shape-divider-bottom-1689834030 .shape-fill {
   fill: #FFFFFF;
 }
-@media screen md {
+@screen md {
   .atf-image {
     height: 500px;
   }
@@ -285,4 +286,7 @@ svg#burger-icon.active {
 .condition-atf-heading {
   @apply text-4xl md:text-6xl font-bold mb-6 text-accent relative tracking-wide;
   text-shadow:-2px 2px 3px #374151;
+}
+.alert-bar {
+  @apply container mx-auto px-4 py-2 md:px-0 flex flex-row justify-between md:justify-end items-center gap-6;
 }

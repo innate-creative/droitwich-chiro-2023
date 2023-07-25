@@ -25,7 +25,7 @@ keywords:
       - Evidence-based chiropractic care
       - Disc injuries
 ---
-# **Droitwich Back and Neck Clinic: Relieving Disc Injuries with Chiropractic Care**
+## **Droitwich Back and Neck Clinic: Relieving Disc Injuries with Chiropractic Care**
 
 ## Introduction
 
