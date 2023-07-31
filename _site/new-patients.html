@@ -266,72 +266,62 @@
   </div>
   <nav id="mobile-nav-menu" class="hidden md:hidden flex-grow bg-gray-200 flex-col justify-start items-end px-4 py-4 h-screen">
     
-        
-      <a href="/about-us" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2  border-gray-300">
-       About
+    
+      <a href="/about-us" class="mobile-menu-link">
+        About
       </a>
-          
-      <a href="" class="text-sm py-1 text-gray-600"></a>
-      
     
     
         
-      <a href="#" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2 border-gray-500">
-       Chiropractic <img src="/assets/graphics/shapes/expand_more_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="inline-block">
+      <button type="button" data-href="#" class="mobile-dropdown-button">
+       Chiropractic<img src="/assets/graphics/shapes/expand_more_FILL0_wght400_GRAD0_opsz24.svg" alt="chevron" class="inline-block">      
+      </button>
+      <div class="mobile-submenu">
+        
+        <a href="/new-patients" class="text-sm py-1 text-gray-600">Your First Visit</a>
+        
+        <a href="/holistic-health-process" class="text-sm py-1 text-gray-600">Holistic Health Process</a>
+        
+      </div>
       
-      </a>
-          
-      <a href="/new-patients" class="text-sm py-1 text-gray-600">Your First Visit</a>
-          
-      <a href="/holistic-health-process" class="text-sm py-1 text-gray-600">Holistic Health Process</a>
-      
-    
     
         
-      <a href="/conditions" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2 border-gray-500">
-       Conditions <img src="/assets/graphics/shapes/expand_more_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="inline-block">
-      
-      </a>
-          
-      <a href="/conditions/back-pain" class="text-sm py-1 text-gray-600">Back Pain</a>
-          
-      <a href="/conditions/neck-pain" class="text-sm py-1 text-gray-600">Neck Pain</a>
-          
-      <a href="/conditions/shoulder-pain" class="text-sm py-1 text-gray-600">Shoulder Pain</a>
-          
-      <a href="/conditions/disc-injuries" class="text-sm py-1 text-gray-600">Disc Injuries</a>
-          
-      <a href="/conditions/dizziness" class="text-sm py-1 text-gray-600">Dizziness</a>
-          
-      <a href="/conditions/headaches" class="text-sm py-1 text-gray-600">Headaches</a>
-      
-    
-    
+      <button type="button" data-href="/conditions" class="mobile-dropdown-button">
+       Conditions<img src="/assets/graphics/shapes/expand_more_FILL0_wght400_GRAD0_opsz24.svg" alt="chevron" class="inline-block">      
+      </button>
+      <div class="mobile-submenu">
         
-      <a href="/faqs" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2  border-gray-300">
-       FAQS
-      </a>
-          
-      <a href="" class="text-sm py-1 text-gray-600"></a>
-      
-    
-    
+        <a href="/conditions/back-pain" class="text-sm py-1 text-gray-600">Back Pain</a>
         
-      <a href="/blog" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2  border-gray-300">
-       Blog
-      </a>
-          
-      <a href="" class="text-sm py-1 text-gray-600"></a>
-      
-    
-    
+        <a href="/conditions/neck-pain" class="text-sm py-1 text-gray-600">Neck Pain</a>
         
-      <a href="/contact" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2  border-gray-300">
-       Contact
-      </a>
-          
-      <a href="" class="text-sm py-1 text-gray-600"></a>
+        <a href="/conditions/shoulder-pain" class="text-sm py-1 text-gray-600">Shoulder Pain</a>
+        
+        <a href="/conditions/disc-injuries" class="text-sm py-1 text-gray-600">Disc Injuries</a>
+        
+        <a href="/conditions/dizziness" class="text-sm py-1 text-gray-600">Dizziness</a>
+        
+        <a href="/conditions/headaches" class="text-sm py-1 text-gray-600">Headaches</a>
+        
+      </div>
       
+    
+    
+      <a href="/faqs" class="mobile-menu-link">
+        FAQS
+      </a>
+    
+    
+    
+      <a href="/blog" class="mobile-menu-link">
+        Blog
+      </a>
+    
+    
+    
+      <a href="/contact" class="mobile-menu-link">
+        Contact
+      </a>
     
     
     
@@ -363,7 +353,7 @@
   <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8 md:mb-12">
     <div class="col-span-1 md:order-1 flex flex-col gap-4 justify-center">
       <h2 class="section-heading">Before you arrive</h2>
-      <div><p>Please arrive ten minutes before your appointment start time in order to fill out a health questionnaire form prior to your consultation. <br><br> It’s best to allow an hour for your initial consultation. This will afford us enough time for a thorough case history and examination to make sure chiropractic treatment is appropriate to your needs. <br><br> Please make yourself familiar with the area and where to park. Directions and parking instructions can be found here.</p></div>
+      <div class="column-section-paragraph"><p>Please arrive ten minutes before your appointment start time in order to fill out a health questionnaire form prior to your consultation. <br><br> It’s best to allow an hour for your initial consultation. This will afford us enough time for a thorough case history and examination to make sure chiropractic treatment is appropriate to your needs. <br><br> Please make yourself familiar with the area and where to park. <a href="/contact">Directions and parking instructions can be found here.</a></p></div>
     </div>
     <div class="col-span-1 md:order-2 p-6">
       <div class="rounded-lg overflow-hidden shadow-md">
@@ -379,7 +369,7 @@
   <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8 md:mb-12">
     <div class="col-span-1 md:order-2 flex flex-col gap-4 justify-center">
       <h2 class="section-heading">During your consult</h2>
-      <div><p>Your chiropractor will begin by asking you some pertinent questions and listening attentively to what you have to say. If after this stage your problem sounds like something we can help with, then we will, with your permission, proceed to the Chiropractic assessment. Should we feel that you are not suitable for chiropractic care then we will refer you to a GP or a suitable specialist. <br><br> Our assessment procedures have been designed to give us the maximum amount of information with the least amount of discomfort for you, the patient. You may be familiar with some of the tests if you have already consulted your GP or a consultant. Some will be unique to chiropractic. <br><br> Droitwich Back & Neck Clinic use state-of-the-art thermographic and digital equipment to assess tension and range of motion in the spine and extremity joints. This aids us in compiling the most accurate diagnosis, and if appropriate, plan of treatment too. Please read some of our <a href="/faqs">frequently-asked-questions</a> for other common information about consults.</p></div>
+      <div class="column-section-paragraph"><p>Your chiropractor will begin by asking you some pertinent questions and listening attentively to what you have to say. If after this stage your problem sounds like something we can help with, then we will, with your permission, proceed to the Chiropractic assessment. Should we feel that you are not suitable for chiropractic care then we will refer you to a GP or a suitable specialist. <br><br> Our assessment procedures have been designed to give us the maximum amount of information with the least amount of discomfort for you, the patient. You may be familiar with some of the tests if you have already consulted your GP or a consultant. Some will be unique to chiropractic. <br><br> Droitwich Back & Neck Clinic use state-of-the-art thermographic and digital equipment to assess tension and range of motion in the spine and extremity joints. This aids us in compiling the most accurate diagnosis, and if appropriate, plan of treatment too. Please read some of our <a href="/faqs">frequently-asked-questions</a> for other common information about consults.</p></div>
     </div>
     <div class="col-span-1 md:order-1 p-6">
       <div class="rounded-lg overflow-hidden shadow-md">
@@ -395,7 +385,7 @@
   <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8 md:mb-12">
     <div class="col-span-1 md:order-1 flex flex-col gap-4 justify-center">
       <h2 class="section-heading">After your initial consult</h2>
-      <div><p>Having listened carefully and examined you appropriately, we will then be able to give you a detailed report on what we have found and how we may be able to help you.<br><br> If appropriate, care may begin on the same day. Sometimes further information is needed in the form of scans or x-rays. At the end of the consultation, we like to allow some time for any questions you may have.<br><br> Do you still have questions? Check out our frequently asked questions or call our friendly staff for further information.</p></div>
+      <div class="column-section-paragraph"><p>Having listened carefully and examined you appropriately, we will then be able to give you a detailed report on what we have found and how we may be able to help you.<br><br> If appropriate, care may begin on the same day. Sometimes further information is needed in the form of scans or x-rays. At the end of the consultation, we like to allow some time for any questions you may have.<br><br> Do you still have questions? Check out our frequently asked questions or call our friendly staff for further information.</p></div>
     </div>
     <div class="col-span-1 md:order-2 p-6">
       <div class="rounded-lg overflow-hidden shadow-md">

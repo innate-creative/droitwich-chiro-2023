@@ -53,14 +53,19 @@
       {{link.name}}
     </a>    
     
-    {% else %}    
-      <a href="{{link.url}}" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2 {%if link.is_dropdown %}border-gray-500{%else%} border-gray-300{%endif%}">
-       {{link.name}}{% if link.is_dropdown %} <img src="/assets/graphics/shapes/expand_more_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="inline-block">
-      {%endif%}
+    {% elsif link.is_dropdown %}    
+      <button type="button" data-href="{{link.url}}" class="mobile-dropdown-button">
+       {{link.name}}<img src="/assets/graphics/shapes/expand_more_FILL0_wght400_GRAD0_opsz24.svg" alt="chevron" class="inline-block">      
+      </button>
+      <div class="mobile-submenu">
+        {% for submenu in link.submenus %}
+        <a href="{{submenu.url}}" class="text-sm py-1 text-gray-600">{{submenu.name}}</a>
+        {% endfor %}
+      </div>
+      {% else %}
+      <a href="{{link.url}}" class="mobile-menu-link">
+        {{link.name}}
       </a>
-      {% for submenu in link.submenus %}    
-      <a href="{{submenu.url}}" class="text-sm py-1 text-gray-600">{{submenu.name}}</a>
-      {% endfor %}
     {% endif %}
     {% endfor %}  
   </nav>

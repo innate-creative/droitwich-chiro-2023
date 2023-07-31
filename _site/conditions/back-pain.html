@@ -266,72 +266,62 @@
   </div>
   <nav id="mobile-nav-menu" class="hidden md:hidden flex-grow bg-gray-200 flex-col justify-start items-end px-4 py-4 h-screen">
     
-        
-      <a href="/about-us" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2  border-gray-300">
-       About
+    
+      <a href="/about-us" class="mobile-menu-link">
+        About
       </a>
-          
-      <a href="" class="text-sm py-1 text-gray-600"></a>
-      
     
     
         
-      <a href="#" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2 border-gray-500">
-       Chiropractic <img src="/assets/graphics/shapes/expand_more_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="inline-block">
+      <button type="button" data-href="#" class="mobile-dropdown-button">
+       Chiropractic<img src="/assets/graphics/shapes/expand_more_FILL0_wght400_GRAD0_opsz24.svg" alt="chevron" class="inline-block">      
+      </button>
+      <div class="mobile-submenu">
+        
+        <a href="/new-patients" class="text-sm py-1 text-gray-600">Your First Visit</a>
+        
+        <a href="/holistic-health-process" class="text-sm py-1 text-gray-600">Holistic Health Process</a>
+        
+      </div>
       
-      </a>
-          
-      <a href="/new-patients" class="text-sm py-1 text-gray-600">Your First Visit</a>
-          
-      <a href="/holistic-health-process" class="text-sm py-1 text-gray-600">Holistic Health Process</a>
-      
-    
     
         
-      <a href="/conditions" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2 border-gray-500">
-       Conditions <img src="/assets/graphics/shapes/expand_more_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="inline-block">
-      
-      </a>
-          
-      <a href="/conditions/back-pain" class="text-sm py-1 text-gray-600">Back Pain</a>
-          
-      <a href="/conditions/neck-pain" class="text-sm py-1 text-gray-600">Neck Pain</a>
-          
-      <a href="/conditions/shoulder-pain" class="text-sm py-1 text-gray-600">Shoulder Pain</a>
-          
-      <a href="/conditions/disc-injuries" class="text-sm py-1 text-gray-600">Disc Injuries</a>
-          
-      <a href="/conditions/dizziness" class="text-sm py-1 text-gray-600">Dizziness</a>
-          
-      <a href="/conditions/headaches" class="text-sm py-1 text-gray-600">Headaches</a>
-      
-    
-    
+      <button type="button" data-href="/conditions" class="mobile-dropdown-button">
+       Conditions<img src="/assets/graphics/shapes/expand_more_FILL0_wght400_GRAD0_opsz24.svg" alt="chevron" class="inline-block">      
+      </button>
+      <div class="mobile-submenu">
         
-      <a href="/faqs" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2  border-gray-300">
-       FAQS
-      </a>
-          
-      <a href="" class="text-sm py-1 text-gray-600"></a>
-      
-    
-    
+        <a href="/conditions/back-pain" class="text-sm py-1 text-gray-600">Back Pain</a>
         
-      <a href="/blog" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2  border-gray-300">
-       Blog
-      </a>
-          
-      <a href="" class="text-sm py-1 text-gray-600"></a>
-      
-    
-    
+        <a href="/conditions/neck-pain" class="text-sm py-1 text-gray-600">Neck Pain</a>
         
-      <a href="/contact" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2  border-gray-300">
-       Contact
-      </a>
-          
-      <a href="" class="text-sm py-1 text-gray-600"></a>
+        <a href="/conditions/shoulder-pain" class="text-sm py-1 text-gray-600">Shoulder Pain</a>
+        
+        <a href="/conditions/disc-injuries" class="text-sm py-1 text-gray-600">Disc Injuries</a>
+        
+        <a href="/conditions/dizziness" class="text-sm py-1 text-gray-600">Dizziness</a>
+        
+        <a href="/conditions/headaches" class="text-sm py-1 text-gray-600">Headaches</a>
+        
+      </div>
       
+    
+    
+      <a href="/faqs" class="mobile-menu-link">
+        FAQS
+      </a>
+    
+    
+    
+      <a href="/blog" class="mobile-menu-link">
+        Blog
+      </a>
+    
+    
+    
+      <a href="/contact" class="mobile-menu-link">
+        Contact
+      </a>
     
     
     
@@ -606,6 +596,7 @@
   </div>
 </section>
 
+<script src="/js/share.js"></script>
       </div>
       
       <footer class="bg-gray-700 py-12 relative">

@@ -16,7 +16,7 @@
 {% when "Icons" %}
 <a href="{{ condition.url }}" class="icons-card group">
   <div class="h-72 condition-image bg-top bg-cover bg-no-repeat"
-    style='background-image: url({% picture direct "{{condition.preview_image | default: "/assets/images/placeholder.jpg"}}" %});'>    
+    style='background-image: url({% picture direct "{{condition.preview_image | default: "/assets/images/placeholder.jpg"}}" %});' loading="lazy">    
   </div>
   <div class="condition-info transform -translate-y-12">
     <div class="condition-icon h-24 w-24 p-4 mx-auto rounded-full border-2 border-gray-100 bg-accent">

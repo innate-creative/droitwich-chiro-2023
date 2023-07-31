@@ -44,8 +44,7 @@ page_scripts_code_block: >-
       faqs.forEach(function (faq) {
         faq.addEventListener('click', function () {
           faq.firstElementChild.classList.toggle('inactive');
-          faq.firstElementChild.classList.toggle('mt-4');
-          ;
+          faq.firstElementChild.classList.toggle('mt-4');          
           let other = faqs.filter(faq => faq !== this);
           other.forEach(function (btn) {
             let answer = btn.firstElementChild;

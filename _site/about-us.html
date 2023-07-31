@@ -266,72 +266,62 @@
   </div>
   <nav id="mobile-nav-menu" class="hidden md:hidden flex-grow bg-gray-200 flex-col justify-start items-end px-4 py-4 h-screen">
     
-        
-      <a href="/about-us" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2  border-gray-300">
-       About
+    
+      <a href="/about-us" class="mobile-menu-link">
+        About
       </a>
-          
-      <a href="" class="text-sm py-1 text-gray-600"></a>
-      
     
     
         
-      <a href="#" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2 border-gray-500">
-       Chiropractic <img src="/assets/graphics/shapes/expand_more_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="inline-block">
+      <button type="button" data-href="#" class="mobile-dropdown-button">
+       Chiropractic<img src="/assets/graphics/shapes/expand_more_FILL0_wght400_GRAD0_opsz24.svg" alt="chevron" class="inline-block">      
+      </button>
+      <div class="mobile-submenu">
+        
+        <a href="/new-patients" class="text-sm py-1 text-gray-600">Your First Visit</a>
+        
+        <a href="/holistic-health-process" class="text-sm py-1 text-gray-600">Holistic Health Process</a>
+        
+      </div>
       
-      </a>
-          
-      <a href="/new-patients" class="text-sm py-1 text-gray-600">Your First Visit</a>
-          
-      <a href="/holistic-health-process" class="text-sm py-1 text-gray-600">Holistic Health Process</a>
-      
-    
     
         
-      <a href="/conditions" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2 border-gray-500">
-       Conditions <img src="/assets/graphics/shapes/expand_more_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="inline-block">
-      
-      </a>
-          
-      <a href="/conditions/back-pain" class="text-sm py-1 text-gray-600">Back Pain</a>
-          
-      <a href="/conditions/neck-pain" class="text-sm py-1 text-gray-600">Neck Pain</a>
-          
-      <a href="/conditions/shoulder-pain" class="text-sm py-1 text-gray-600">Shoulder Pain</a>
-          
-      <a href="/conditions/disc-injuries" class="text-sm py-1 text-gray-600">Disc Injuries</a>
-          
-      <a href="/conditions/dizziness" class="text-sm py-1 text-gray-600">Dizziness</a>
-          
-      <a href="/conditions/headaches" class="text-sm py-1 text-gray-600">Headaches</a>
-      
-    
-    
+      <button type="button" data-href="/conditions" class="mobile-dropdown-button">
+       Conditions<img src="/assets/graphics/shapes/expand_more_FILL0_wght400_GRAD0_opsz24.svg" alt="chevron" class="inline-block">      
+      </button>
+      <div class="mobile-submenu">
         
-      <a href="/faqs" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2  border-gray-300">
-       FAQS
-      </a>
-          
-      <a href="" class="text-sm py-1 text-gray-600"></a>
-      
-    
-    
+        <a href="/conditions/back-pain" class="text-sm py-1 text-gray-600">Back Pain</a>
         
-      <a href="/blog" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2  border-gray-300">
-       Blog
-      </a>
-          
-      <a href="" class="text-sm py-1 text-gray-600"></a>
-      
-    
-    
+        <a href="/conditions/neck-pain" class="text-sm py-1 text-gray-600">Neck Pain</a>
         
-      <a href="/contact" class="block py-2 w-full text-right text-base font-light tracking-wider focus:text-highlight transition-all border-b-2  border-gray-300">
-       Contact
-      </a>
-          
-      <a href="" class="text-sm py-1 text-gray-600"></a>
+        <a href="/conditions/shoulder-pain" class="text-sm py-1 text-gray-600">Shoulder Pain</a>
+        
+        <a href="/conditions/disc-injuries" class="text-sm py-1 text-gray-600">Disc Injuries</a>
+        
+        <a href="/conditions/dizziness" class="text-sm py-1 text-gray-600">Dizziness</a>
+        
+        <a href="/conditions/headaches" class="text-sm py-1 text-gray-600">Headaches</a>
+        
+      </div>
       
+    
+    
+      <a href="/faqs" class="mobile-menu-link">
+        FAQS
+      </a>
+    
+    
+    
+      <a href="/blog" class="mobile-menu-link">
+        Blog
+      </a>
+    
+    
+    
+      <a href="/contact" class="mobile-menu-link">
+        Contact
+      </a>
     
     
     
@@ -360,8 +350,8 @@
 
 
 <section class="team-profile bg-gray-200">
-  <div class="container mx-auto grid grid-cols-2 gap-8 px-4 md:px-0 ">
-    <div class="col-span-1 py-4 md:py-8 lg:py-16 flex flex-col justify-center order-1">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-0 ">
+    <div class="order-2 md:order-1 col-span-1 py-4 md:py-8 lg:py-16 flex flex-col justify-center">
       <h2 class="text-accent font-semibold text-2xl md:text-5xl mb-2">
         Dr. Andrew Robson
       </h2>
@@ -370,7 +360,7 @@
         <p>Andrew initially qualified as a chiropractor because he wanted to help improve other people’s lives in the same way that a chiropractor had improved his. Several years of competitive rowing, including international events, had left him with regular back pain and discomfort.</p> <br> <p>After putting up with it for years, he could take no more and booked to see a chiropractor, but had only modest expectations. To his surprise, the chiropractor was able to stop the pain and discomfort which had been felt especially when sitting and driving. He was also encouraged to become more active and maintain a healthier lifestyle, which he has now done for eleven years.</p> <br> <p>Andrew was so inspired by what happened in his own life, he eventually decided to take the plunge by turning his back on a career in advertising, and going back to university and training to become a chiropractor himself. This was the start of over five years of study and practice in helping the body heal and improve function and performance. This included work with the Cardiff City FC youth academy studying the rate and incidence of knee injuries with the goal of future prevention.</p> <br> <p>After qualifying as a chiropractor, Andrew worked initially in the south-east and for two years in one of the busiest chiropractic clinics in the UK, in Swindon. Andrew returned to his hometown of Droitwich in late 2015 and founded Droitwich Back & Neck Clinic in January 2016.</p> <br> <p>Andrew treats people with a range of problems including low back pain, neck and shoulder pain, headaches, and pain in the peripheral joints of the body. Andrew’s patients vary in age from 6 years old, all the way up to 86 years old. The problems they come to see Andrew about range from short-term injuries to far more long-term degenerative conditions.</p> <br> <p>Andrew enjoys helping improve people’s lives but is also interested in finding out how and why injuries occur and what prevents an individual from recovering, in order that he can help people avoid long-term pain and discomfort in the first place and enjoy their lives to the full.</p> <br> <p>Andrew prides himself on using the best technology for both diagnosis and treatment as he has found this aids his patients in achieving their goals sooner.</p>
       </p>
     </div>
-    <div class="col-span-1 py-8 order-2">
+    <div class="col-span-1 py-8 order-1 md:order-2">
       <div class="h-full md:h-96 md:w-80 md:mx-auto">
         <picture>
   <source srcset="/srcset/assets/images/droitwich-dr-andrew-robson-profile-400-c5de27653.webp 400w, /srcset/assets/images/droitwich-dr-andrew-robson-profile-552-c5de27653.webp 552w" type="image/webp">

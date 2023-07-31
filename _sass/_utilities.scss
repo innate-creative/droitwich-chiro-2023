@@ -73,6 +73,28 @@
   transform: scale(0.95);
   transition: ease-out 100ms;
 }
+.mobile-dropdown-button,
+.mobile-menu-link {
+  @apply block py-2 w-full text-right text-base font-light tracking-wider focus:text-accent transition-all border-b-2 border-gray-300;
+}
+.mobile-dropdown-button {
+  img {
+    @apply transform rotate-0 transition-transform origin-center duration-500;
+  }
+}
+.mobile-dropdown-button.active {
+  img {
+    @apply transform rotate-180 transition-transform origin-center duration-500;
+  }
+  @apply border-blue-400 text-blue-500 transition-all duration-500;
+}
+.mobile-submenu {
+  @apply max-h-0 opacity-0 transform translate-x-full flex flex-col justify-center items-end w-full z-10 transition-all duration-300 overflow-hidden;
+}
+.mobile-submenu.open {
+  @apply max-h-screen opacity-100 translate-x-0 transition-all duration-500 z-30;
+}
+
 .footer-nav {
   @apply hidden md:col-span-6 md:order-3 lg:col-span-2 lg:order-none md:flex flex-col md:flex-row flex-grow flex-shrink-0 justify-center items-center gap-3;
 }
@@ -121,11 +143,15 @@ p {
 }
 .faq {
   .answer {
+    @apply max-h-screen overflow-y-scroll transition-all duration-500;
     p {
       @apply normal-case text-gray-800 font-body text-sm;
     }
     li {
       @apply font-heading normal-case font-semibold text-sm list-inside list-disc text-gray-600;
+    }
+    &.inactive {
+      @apply max-h-0 opacity-0 duration-500;
     }
   }
 }
@@ -248,7 +274,7 @@ svg#burger-icon.active {
   fill: #ee8035;
 }
 .inactive {
-  @apply h-0 opacity-0 z-0;
+  @apply max-h-0 opacity-0 z-0 transition-all;
 }
 .nav-logo {
   @apply
@@ -338,4 +364,15 @@ svg#burger-icon.active {
 }
 .alert-bar {
   @apply container mx-auto px-4 py-2 md:px-0 flex flex-row justify-between md:justify-end items-center gap-6;
+}
+.column-section-paragraph {
+  p {
+    @apply font-body text-gray-700 text-sm md:text-base lg:text-lg;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    a {
+      @apply text-highlight underline;
+    }
+  }
 }
