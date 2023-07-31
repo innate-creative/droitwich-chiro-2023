@@ -108,11 +108,3 @@ collections:
     sort_by: index
     permalink: /conditions/:title
 
-strapi:
-  # Your API endpoint (optional, default to http://localhost:1337)
-  endpoint: http://localhost:1337
-  collections:
-    posts:
-      type: posts
-    conditions:
-      type: conditions

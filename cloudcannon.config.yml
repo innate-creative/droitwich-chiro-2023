@@ -29,7 +29,53 @@ collection_groups:
 collections_config_override: false
 
 # Control which data sets are available to populate select and multiselect inputs.
+_select_data:
+  colors:
+  - "main"
+  - "secondary"
+  - "tertiary"
+  - "highlight"
+  - "shade"
+
+channels:
+  - "Facebook"
+  - "Instagram"
+  - "Twitter"
+  - "WhatsApp"
+  - "Github"
+  - "Snapchat"
+  - "LinkedIn"
+  - "Skype"
+  - "Telegram"
+  - "Signal"
+  - "Messenger"
+    
+text_colors:
+  - "text-gray-50"
+  - "text-gray-100"
+  - "text-gray-200"
+  - "text-gray-300"
+  - "text-gray-400"
+  - "text-gray-500"
+  - "text-gray-600"
+  - "text-gray-700"
+  - "text-gray-800"
+  - "text-gray-900"
+
+background_colors:
+  - "bg-green-50"
+  - "bg-green-100"
+  - "bg-green-200"
+  - "bg-green-300"
+  - "bg-green-400"
+  - "bg-green-500"
+  - "bg-green-600"
+  - "bg-green-700"
+  - "bg-green-800"
+  - "bg-green-900"
+
 data_config:
+  
 
 # Base path to your source files, relative to the root folder of your repository.
 source:
