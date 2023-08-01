@@ -180,7 +180,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(55,55,55,1) 0%, rgba(236,236,236,0.44021358543417366) 50%);
+    background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(236,236,236,0.44021358543417366) 70%);
   }
 }
 .atf-image {
@@ -375,4 +375,29 @@ svg#burger-icon.active {
       @apply text-highlight underline;
     }
   }
+}
+.who-we-help--wrapper {
+  @apply col-span-2 bg-center bg-cover bg-no-repeat h-96 flex items-center justify-center relative;
+  &::before {
+    content: '';
+    @apply w-full h-full bg-gray-700 opacity-50 absolute top-0 left-0;
+  };
+}
+.who-we-help--wrapper:hover {
+  &::before {
+    @apply bg-blue-800 transition-colors duration-300;
+  }
+  .who-we-help--heading {
+    @apply transform -translate-y-10 duration-300;
+  }
+  .who-we-help--paragraph {
+    @apply translate-y-0 opacity-100 max-h-full duration-700;
+  }
+}
+.who-we-help--heading {
+  text-shadow: 1px 2px 1px whitesmoke;
+  @apply text-3xl md:text-4xl lg:text-5xl text-center translate-y-0 text-highlight transition-all duration-700 relative;
+}
+.who-we-help--paragraph {
+  @apply translate-y-20 text-gray-50 font-light text-sm lg:text-base max-h-0 opacity-0 transition-all duration-300 relative px-4 md:px-2;
 }

@@ -1,0 +1,100 @@
+# Read the CloudCannon documentation for more information on how to use this file:
+# https://cloudcannon.com/documentation/articles/setting-global-configuration/?ssg=Jekyll
+
+# Collections are related sets of content files, typically grouped by folder.
+# Here you can define your collections, as well as any
+# CloudCannon configuration specific to those collections.
+collections_config:
+  data:
+    path: _data
+    output: false
+  posts:
+    path: _posts
+    output: true
+    create:
+      path: >-
+        [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
+  pages:
+    output: true
+    path: _pages
+  conditions:
+    output: true
+    path: _conditions
+
+# Control which collections are displayed in the CloudCannon site navigation,
+# and how those collections are grouped.
+collection_groups:
+
+# Set this to true to disable auto-detection of collections.
+collections_config_override: false
+
+# Control which data sets are available to populate select and multiselect inputs.
+_select_data:
+  colors:
+  - "main"
+  - "secondary"
+  - "tertiary"
+  - "highlight"
+  - "shade"
+
+channels:
+  - "Facebook"
+  - "Instagram"
+  - "Twitter"
+  - "WhatsApp"
+  - "Github"
+  - "Snapchat"
+  - "LinkedIn"
+  - "Skype"
+  - "Telegram"
+  - "Signal"
+  - "Messenger"
+    
+text_colors:
+  - "text-gray-50"
+  - "text-gray-100"
+  - "text-gray-200"
+  - "text-gray-300"
+  - "text-gray-400"
+  - "text-gray-500"
+  - "text-gray-600"
+  - "text-gray-700"
+  - "text-gray-800"
+  - "text-gray-900"
+
+background_colors:
+  - "bg-green-50"
+  - "bg-green-100"
+  - "bg-green-200"
+  - "bg-green-300"
+  - "bg-green-400"
+  - "bg-green-500"
+  - "bg-green-600"
+  - "bg-green-700"
+  - "bg-green-800"
+  - "bg-green-900"
+
+data_config:
+  
+
+# Base path to your source files, relative to the root folder of your repository.
+source:
+
+# The locations of various types of files within your site.
+# Each path is relative to your site's source folder.
+paths:
+  data: _data
+  collections: ''
+  layouts: _layouts
+  static: ''
+  uploads: assets/images
+  includes: _includes
+  dam_uploads: ''
+  dam_static: ''
+
+# Lets you control the look and behaviour of the Source Editor.
+source_editor:
+
+# Timezone of your site in IANA format. This is used by date and datetime inputs
+# within the CloudCannon Data Editor.
+timezone: Etc/UTC
