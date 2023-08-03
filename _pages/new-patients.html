@@ -4,7 +4,6 @@ title: Chiropractic Care - Droitwich Back & Neck Clinic
 short_description: What happens when you first visit a chiropractor? We're here to answer some of your questions about your first visit.
 header_background_image: /assets/images/droitwich-consulting-ipad.jpg
 description_text:
-
 column_sections:
   - heading: Before you arrive
     paragraph_html: >-
@@ -43,6 +42,57 @@ column_sections:
       information.</p>
     image: /assets/images/droitwich-consulting-ipad.jpg
     alt_text:
+who_we_help_sections:
+  - image: /assets/images/manual-worker.jpg
+    heading: Manual Workers
+    paragraph_html: >-
+      Whatever your job is, the last thing you need is pain in your back and neck slowing you down, making it harder to work, and having a negative impact on your life outside work too. Repetitive physical work can lead to pain. We have seen many manual workers suffering from these issues, causing intense worry about potential inability to continue with work and loss of livelihood. We have helped many people like you get back to pain-free work and look forward to helping you too.
+  - image: /assets/images/elderly.jpg
+    heading: Seniors
+    paragraph_html: >-
+      Aging leads to loss of strength and flexibility. We also often find that small aches and pains can suddenly become big events in our lives. For some this can lead to a loss of independence or dignity. We understand how these issues affect your quality of life, and how physical pain can lead to a loss of leisure and social opportunities, and consequently a sense of isolation from friends and family, potentially leading to depression. We have helped large numbers of seniors get back to doing what they love, and look forward to doing the same for you.
+  - image: /assets/images/office-workers.jpg
+    heading: Office Workers
+    paragraph_html: >-
+      Today, with more of the workforce working in an office-based environment than ever before, chronic problems associated with being desk-bound for many hours are becoming more and more prevalent. Even with the most ergonomic workstation set-up, more and more office workers are suffering from posture-related problems such as low and upper back pain, as well as chronic neck pain and headaches. We understand the misery that such pain can cause, making it hard to concentrate and perform at work, with the pain also crossing over to your personal life, making it harder to do the things you love. We look forward to helping you on your road to recovery.
+  - image: /assets/images/golf-swing.jpg
+    heading: Active People
+    paragraph_html: >-
+      People come to us for the first time complaining of a variety of different problems, usually connected with the low back, neck and head. The one thing that everyone has in common, however, is a sense that something is missing from their life, that the pain is preventing them from doing the things they enjoy most and living life to the full. This can range from the ability to go hiking, to play football, to do DIY, gardening, dancing or to play with grandchildren. Whatever is causing you pain, frustration or distress, if we believe we can help you will receive a personalised care plan tailored specifically to achieving your goals. We look forward to helping you stay active for the long term.
+why_us_section:
+  icon_fill_color: '#f2f2f2'
+  content:
+    - heading: Trust
+      paragraph_html: >- 
+          <p>This is the cornerstone of any relationship. We will give you a clear explanation of what is going wrong, and what
+          options are open to you. If we feel that you would be better served by another healthcare practitioner we will refer you
+          to one.</p>
+      icon: 
+    - heading: Gentleness
+      paragraph_html: >- 
+        <p>Many people feel that chiropractic is just about ‘cracking bones’. Chiropractic has evolved from those early days to include many gentle techniques that don’t involve this and are just as effective. We suit the treatment to the patient, we are not a one size fits all clinic.</p>
+      icon: 
+    - heading: Respect
+      paragraph_html: >- 
+        <p>We respect that your right to be fully involved in and informed about your plan of care.</p>
+      icon: 
+    - heading: Tailored
+      paragraph_html: >- 
+        <p>We don’t adopt a ‘one size fits all’ approach. Each person who begins treatment will receive an individual plan,
+        tailored to their personal needs and goals. We will take into account all factors of a person’s life, including diet,
+        occupation, stress, and exercise when deciding how to treat.</p>
+      icon: 
+    - heading: Technology
+      paragraph_html: >- 
+        <p>Droitwich Back & Neck Clinic use state-of-the-art thermographic and digital equipment to assess tension and range of
+        motion in the spine and extremity joints. This aids us in identifying the dysfunctional areas of the spine and therefore
+        addressing the underlying causes of pain rather than just the symptoms.</p>
+      icon: 
+    - heading: Results
+      paragraph_html: >- 
+        <p>Our patients have an excellent record for achieving their goals and we are the highest rated clinic in Worcestershire
+        according to Google Reviews. Click here to watch ad read our reviews.</p>
+      icon: 
 keywords:
   - what is chiropractic
   - chiropractic consultation
@@ -78,4 +128,43 @@ page_scripts_code_block: >-
   </div> 
   {% endfor %} 
 </section>
+<div class="bg-gray-200">
+  <section class="container mx-auto px-4 md:px-0 py-12">
+    <h2 class="section-heading text-accent">Who we help</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+      {% for item in page.who_we_help_sections %}
+      <div class="who-we-help--wrapper group" style="background-image: url({{item.image}});">
+        <div class="process-component flex flex-col items-center justify-center">
+          <h3 class="who-we-help--heading">
+            {{item.heading}}
+          </h3>
+          <div class="who-we-help--paragraph">
+            {{item.paragraph_html}}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+</div>
+<div class="bg-gray-700">
+  <div class="container mx-auto px-4 md:px-0 py-12">
+    <h2 class="section-heading text-gray-100 text-center">Why Choose us?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {% for item in page.why_us_section.content %}
+      <div class="col-span-1 p-2 md:p-4 bg-gray-600 rounded-lg text-center">
+        <div class="h-10 w-10 md:h-16 md:w-16 mx-auto mb-3">
+          {% include chiro-icons.html icon=item.icon fill_color=page.why_us_section.icon_fill_color %}
+        </div>
+        <h3 class=" uppercase font-heading text-xl md:text-2xl text-highlight mb-4">
+          {{item.heading}}
+        </h3>
+        <div class="text-gray-100 font-body text-sm">
+          {{item.paragraph_html}}
+        </div>
+      </div>
+      {% endfor %}      
+    </div>
+  </div>
+</div>
 {% include sections/cta.html %}

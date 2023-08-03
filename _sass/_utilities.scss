@@ -385,7 +385,8 @@ svg#burger-icon.active {
 }
 .who-we-help--wrapper:hover {
   &::before {
-    @apply bg-blue-800 transition-colors duration-300;
+    background-color: #00366c; 
+    @apply  transition-colors duration-300;
   }
   .who-we-help--heading {
     @apply transform -translate-y-10 duration-300;
