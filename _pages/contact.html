@@ -5,12 +5,7 @@ description_text:
 short_description:
 keywords: []
 page_scripts_code_block: >-
-  <script>
-    const submitBtn = document.getElementById('submit');    
-    submitBtn.addEventListener('click', function(){
-      setTimeout(function(){alert("Thank you! We'll be in touch shortly"), 2000});
-    });    
-  </script>
+  
 ---
 <main class="bg-main py-24 md:py-8">
   <div class="container mx-auto flex flex-col md:flex-row gap-8 items-center justify-end md:justify-center px-4 md:px-0 pb-8 pd:pb-0">
@@ -23,7 +18,7 @@ page_scripts_code_block: >-
       </p>    
     </div>
     <div class="w-full md:flex-1">
-      <form id="contact-form" action="/" method="post" class="flex flex-col gap-4">
+      <form id="contact-form" action="" method="post" class="flex flex-col gap-4" netlify>
         <input type="hidden" name="inbox_key" value="contact-form-droitwich">
         <input type="text" name="Name" placeholder="Your Name" class="border border-white rounded-md text-gray-50 p-2 md:p-4 bg-transparent" >
         <input type="text" name="Email" required placeholder="Your Email" class="border border-white rounded-md text-gray-50 p-2 md:p-4 bg-transparent" >
