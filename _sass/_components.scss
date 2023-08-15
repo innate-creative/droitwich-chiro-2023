@@ -59,6 +59,10 @@ textarea {
   @apply
    text-3xl md:text-5xl mb-12 font-bold relative inline-block border-b-4 border-accent pb-2;
 }
+.section-subheading {
+  @apply
+   text-xl md:text-3xl font-bold relative inline-block text-highlight pb-4 uppercase;
+}
 .process-component {
   @apply p-0 md:p-6 text-center flex-1;
   &--icon {

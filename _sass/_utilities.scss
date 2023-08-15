@@ -367,7 +367,7 @@ svg#burger-icon.active {
 }
 .column-section-paragraph {
   p {
-    @apply font-body text-gray-700 text-sm md:text-base lg:text-lg;
+    @apply font-body text-gray-700 text-sm md:text-base;
     &::-webkit-scrollbar {
       display: none;
     }
@@ -383,22 +383,16 @@ svg#burger-icon.active {
     @apply w-full h-full bg-gray-700 opacity-50 absolute top-0 left-0;
   };
 }
-.who-we-help--wrapper:hover {
-  &::before {
-    background-color: #00366c; 
-    @apply  transition-colors duration-300;
-  }
-  .who-we-help--heading {
-    @apply transform -translate-y-10 duration-300;
-  }
-  .who-we-help--paragraph {
-    @apply translate-y-0 opacity-100 max-h-full duration-700;
-  }
-}
+
 .who-we-help--heading {
   text-shadow: 1px 2px 1px whitesmoke;
   @apply text-3xl md:text-4xl lg:text-5xl text-center translate-y-0 text-highlight transition-all duration-700 relative;
 }
 .who-we-help--paragraph {
-  @apply translate-y-20 text-gray-50 font-light text-sm lg:text-base max-h-0 opacity-0 transition-all duration-300 relative px-4 md:px-2;
+  @apply  text-gray-50 font-light text-sm lg:text-base max-h-0 opacity-0 transition-all duration-300 relative px-4 md:px-2;
+}
+.why-paragraph {
+  p {
+    @apply text-gray-100 font-body text-sm;
+  }
 }

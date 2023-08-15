@@ -98,7 +98,46 @@ keywords:
   - chiropractic consultation
   - what does a chiropractor do
 page_scripts_code_block: >-
-        
+      <script defer>
+        window.addEventListener('DOMContentLoaded', function () {          
+          const avatars = Array.from(document.querySelectorAll('.who-we-help--wrapper'));
+          const subheadings = Array.from(document.querySelectorAll('.section-subheading'));
+          avatars.forEach((avatar) => {
+            let heading = avatar.querySelector('.who-we-help--heading');
+            let paragraph = avatar.querySelector('.who-we-help--paragraph');
+            gsap.to(heading, {
+              scrollTrigger: {
+                trigger: avatar,
+                start: 'top 50%',
+              },
+              y: '-100px'
+            })
+            gsap.to(paragraph, {
+              scrollTrigger: {
+                trigger: avatar,
+                start: 'top 50%',
+              },
+              opacity: 1,
+              height: '100%',
+              y: '-80px'
+            })
+          })
+          subheadings.forEach((subheading) => {
+            gsap.set(subheading, {
+              y: '10px',
+              opacity: 0
+            })
+            gsap.to(subheading, {
+              scrollTrigger: {
+                trigger: subheading,
+                start: 'top 70%',                
+              },
+              opacity: 1,
+              y: 0
+            })
+          })          
+        })
+      </script>
 ---
 <main class="atf-bg py-32 md:py-40 relative"
   style='background-image: url({% picture direct "{{page.header_background_image | default: "/assets/images/placeholder.jpg"}}" %});background-attachment:fixed;'>
@@ -112,25 +151,10 @@ page_scripts_code_block: >-
     </p>
   </div>
 </main>
-
-<section class="container mx-auto px-4 md:px-0 py-12">
-  {% for section in page.column_sections %}
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8 md:mb-12">
-    <div class="col-span-1 {% cycle 'md:order-1', 'md:order-2' %} flex flex-col gap-4 justify-center">
-      <h2 class="section-heading">{{section.heading}}</h2>
-      <div class="column-section-paragraph">{{section.paragraph_html}}</div>
-    </div>
-    <div class="col-span-1 {% cycle 'md:order-2', 'md:order-1' %} p-6">
-      <div class="rounded-lg overflow-hidden shadow-md">
-        {% picture xlarge "{{section.image | default: '/assets/images/placeholder.jpg' }}" --img alt="{{section.alt_text}}" class="object-cover w-full h-full" %}      
-      </div>
-    </div>    
-  </div> 
-  {% endfor %} 
-</section>
 <div class="bg-gray-200">
   <section class="container mx-auto px-4 md:px-0 py-12">
-    <h2 class="section-heading text-accent">Who we help</h2>
+    <h2 class="section-heading text-gray-700">Who we help</h2>
+    <p class="section-paragraph text-gray-600 mb-6">Here at Droitwich Neck and Back Clinic we help people get back to their best self, and we are proud to provide personalised chiropractic care to:</p>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
       {% for item in page.who_we_help_sections %}
       <div class="who-we-help--wrapper group" style="background-image: url({{item.image}});">
@@ -147,6 +171,23 @@ page_scripts_code_block: >-
     </div>
   </section>
 </div>
+<section class="container mx-auto px-4 md:px-0 py-12 lg:w-2/3">
+  <h2 class="section-heading text-gray-700 text-center mb-8">Your First Visit</h2>
+  <p class="section-paragraph mb-8">We understand that preparing for your first visit can be daunting, so we've established a clear process to reduce your concerns and doubts about chiropractic care.</p>
+  {% for section in page.column_sections %}
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8 md:mb-12 ">
+    <div class="col-span-1 {% cycle 'md:order-1', 'md:order-2' %} flex flex-col gap-4 justify-center">
+      <h3 class="section-subheading text-gray-700">{{section.heading}}</h3>
+      <div class="column-section-paragraph">{{section.paragraph_html}}</div>
+    </div>
+    <div class="col-span-1 {% cycle 'md:order-2', 'md:order-1' %} p-6">
+      <div class="rounded-lg overflow-hidden shadow-md">
+        {% picture xlarge "{{section.image | default: '/assets/images/placeholder.jpg' }}" --img alt="{{section.alt_text}}" class="object-cover w-full h-full" %}      
+      </div>
+    </div>    
+  </div> 
+  {% endfor %} 
+</section>
 <div class="bg-gray-700">
   <div class="container mx-auto px-4 md:px-0 py-12">
     <h2 class="section-heading text-gray-100 text-center">Why Choose us?</h2>
@@ -156,10 +197,10 @@ page_scripts_code_block: >-
         <div class="h-10 w-10 md:h-16 md:w-16 mx-auto mb-3">
           {% include chiro-icons.html icon=item.icon fill_color=page.why_us_section.icon_fill_color %}
         </div>
-        <h3 class=" uppercase font-heading text-xl md:text-2xl text-highlight mb-4">
+        <h3 class="uppercase font-heading text-xl md:text-2xl text-highlight mb-4">
           {{item.heading}}
         </h3>
-        <div class="text-gray-100 font-body text-sm">
+        <div class="why-paragraph">
           {{item.paragraph_html}}
         </div>
       </div>
