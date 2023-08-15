@@ -9,4 +9,4 @@
   package = "netlify-plugin-jekyll-cache"
 
 [[plugins]]
-    package = "netlify-plugin-debug-cache"
+  package = "netlify-plugin-debug-cache"
