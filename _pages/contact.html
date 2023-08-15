@@ -19,7 +19,6 @@ page_scripts_code_block: >-
     </div>
     <div class="w-full md:flex-1">
       <form id="contact-form" action="" method="post" class="flex flex-col gap-4" netlify>
-        <input type="hidden" name="inbox_key" value="contact-form-droitwich">
         <input type="text" name="Name" placeholder="Your Name" class="border border-white rounded-md text-gray-50 p-2 md:p-4 bg-transparent" >
         <input type="text" name="Email" required placeholder="Your Email" class="border border-white rounded-md text-gray-50 p-2 md:p-4 bg-transparent" >
         <label for="enquiry_type" class="text-gray-50 text-lg font-bold">Type of Enquiry (Click to Select)</label>
@@ -41,7 +40,8 @@ page_scripts_code_block: >-
         <textarea type="text" name="Message" class="border border-white rounded-md text-gray-50 p-2 md:p-4 bg-transparent"></textarea>
         <input type="hidden" name="_to" value="{{ site.data.settings.general.email }}">        
         <input type="text" name="_gotcha" style="display: none;">
-        <input id="submit" type="submit" value="Send message" class="btn-highlight btn-default g-recaptcha" data-sitekey="6Lfv7aonAAAAAHHdR_xhOPsmlDAoLWeD7hTeB8EW" data-callback='onSubmit' data-action='submit'>
+        <!-- <input id="submit" type="submit" value="Send message" class="btn-highlight btn-default g-recaptcha" data-sitekey="6Lfv7aonAAAAAHHdR_xhOPsmlDAoLWeD7hTeB8EW" data-callback='onSubmit' data-action='submit'> -->
+        <input id="submit" type="submit" value="Send message" class="btn-highlight btn-default">
       </form>
     </div>
   </div>
@@ -49,9 +49,9 @@ page_scripts_code_block: >-
 <section id="location">
   {% include sections/map.html %}
 </section>
- <script src="https://www.google.com/recaptcha/api.js"></script>
+ <!-- <script src="https://www.google.com/recaptcha/api.js"></script>
   <script>
    function onSubmit(token) {
      document.getElementById("contact-form").submit();
    }
- </script>
+ </script> -->
