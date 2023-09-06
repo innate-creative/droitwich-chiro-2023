@@ -138,6 +138,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Alata&family=Questrial&display=swap" rel="stylesheet preload" as="style" crossorigin="anonymous" type="text/css">  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" defer></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <link rel="preload stylesheet" as="style" href="/style/main.css">
 </head>
     <body class="font-body min-h-screen flex flex-col overflow-x-hidden" style="scroll-behavior: smooth;">
@@ -636,8 +637,21 @@
 </footer>
       <script defer type="text/javascript" src="/js/config.js"></script>
       <script defer type="text/javascript" src="https://cdn.kiprotect.com/klaro/v0.7.18/klaro.js"></script>
+      
       <!-- All of your non-critical scripts can go here -->
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 <script src="/js/site.js" type="text/javascript"></script>
+
             
     </body>
   </html>

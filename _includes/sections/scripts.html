@@ -1,2 +1,13 @@
 <!-- All of your non-critical scripts can go here -->
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 <script src="/js/site.js" type="text/javascript"></script>

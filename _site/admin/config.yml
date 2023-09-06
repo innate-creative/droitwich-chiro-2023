@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: "assets/images"  
+
+collections:
+  - name: "conditions" # Used in routes, e.g., /admin/collections/blog
+    label: "Conditions" # Used in the UI
+    folder: "_conditions" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "condition"}
+      - {label: "Index", name: "index", widget: "number"}
+      - {label: "SEO Title", name: "title", widget: "string"}
+      - {label: "Chiro Icon", name: "chiro_icon", widget: "string"}      
+      - {label: "Header Title", name: "header_title", widget: "string"}
+      - {label: "Header Image", name: "header_image", widget: "image"}
+      - {label: "Preview Image", name: "preview_image", widget: "image"}
+      - {label: "Alternative Text", name: "alt_text", widget: "text"}
+      - {label: "Page Description", name: "short_description", widget: "text"}
+      - {label: "SEO Description", name: "description_text", widget: "text"}
+      - {label: "Keywords", name: "keywords", widget: "list"}
+      - {label: "Content", name: "content", widget: "markdown"}
