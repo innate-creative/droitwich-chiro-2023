@@ -80,6 +80,12 @@ navigation:
           url: /conditions/neck-pain
         - name: Shoulder Pain
           url: /conditions/shoulder-pain
+        - name: Knee Pain
+          url: /conditions/knee-pain
+        - name: Elbow Pain
+          url: /conditions/elbow-pain
+        - name: Migraines
+          url: /conditions/migraines
         - name: Disc Injuries
           url: /conditions/disc-injuries
         - name: Dizziness 

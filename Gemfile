@@ -10,5 +10,5 @@ source 'https://rubygems.org'
     gem 'jekyll-purgecss'
     gem 'jekyll-paginate-v2'
     gem 'jekyll-feed'
-    gem 'jekyll_picture_tag', '~> 2.0'      
+    gem 'jekyll_picture_tag', '~> 2.0'       
   end

@@ -29,7 +29,7 @@ plugins:
   - jekyll-purgecss  
   - jekyll_picture_tag
   - jekyll-paginate-v2
-  - jekyll-last-modified-at
+  - jekyll-last-modified-at  
 
 picture:
   source: "/"
@@ -107,4 +107,3 @@ collections:
     output: true
     sort_by: index
     permalink: /conditions/:title
-

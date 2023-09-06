@@ -4,8 +4,8 @@ index: 1
 title: Chiropractic for Back Pain
 chiro_icon: 4
 header_title: Back Pain
-header_image: /assets/images/healthcare-websites-innate-creative-00006.jpg
-preview_image: /assets/images/healthcare-websites-innate-creative-00006.jpg
+header_image: /assets/images/healthcare-websites-innate-creative-00004.jpg
+preview_image: /assets/images/healthcare-websites-innate-creative-00004.jpg
 alt_text:
 short_description: >-
   Back pain and sciatica are one of the most common complaints we see as

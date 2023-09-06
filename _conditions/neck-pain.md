@@ -4,8 +4,8 @@ index: 2
 title: Neck Pain
 header_title: Neck Pain
 chiro_icon: 23
-header_image: /assets/images/healthcare-websites-innate-creative-00004.jpg
-preview_image: /assets/images/healthcare-websites-innate-creative-00004.jpg
+header_image: /assets/images/healthcare-websites-new-00003.jpg
+preview_image: /assets/images/healthcare-websites-new-00003.jpg
 alt_text:
 short_description: Anyone who has experienced neck pain knows how debilitating it can be. Neck pain can significantly impact your life, limiting many of your daily activities and causing added stress. At Droitwich Chiropractic  we are 100% committed to helping you heal naturally without drugs or surgery.
 description_text:
