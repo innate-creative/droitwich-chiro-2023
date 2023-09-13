@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
-
+  branch: main # Branch to update (optional; defaults to master)
+display_url: https://droitwich-chiro.netlify.app
 media_folder: "assets/images"  
 
 collections:
@@ -23,3 +23,66 @@ collections:
       - {label: "SEO Description", name: "description_text", widget: "text"}
       - {label: "Keywords", name: "keywords", widget: "list"}
       - {label: "Content", name: "content", widget: "markdown"}
+  - name: "settings"
+    label: "Site Config"
+    files: 
+      - label: "Address and Contact"
+        name: "address_contact"
+        file: "_data/settings.yml"
+        fields:
+          - label: "Practice Info"
+            name: fiscal
+            widget: object
+            fields:
+              - {label: "Practice Name", name: practice_name, widget: string}
+              - {label: "Registration Number", name: company_reg_number, widget: string}
+          - label: "Address"
+            name: address
+            widget: object
+            fields:
+              - {label: "Street", name: "street_address_1", widget: string }
+              - {label: "Complement", name: "street_address_2", widget: string }
+              - {label: "Area", name: "neighbourhood", widget: string }
+              - {label: "Town/City", name: "town", widget: string }
+              - {label: "Post Code", name: "post_code", widget: string }
+              - {label: "Country", name: "country", widget: string }
+          - label: "Contact"
+            name: contact
+            widget: object
+            fields:
+              - {label: "Phone", name: "phone", widget: string }
+              - {label: "Email", name: "email", widget: string }
+      - label: "Menus"
+        name: "navigation"
+        file: "_data/navigation.yml"
+        fields:
+          - label: "Menu Item"
+            name: menus
+            widget: list
+            create: true
+            fields:
+              - {label: "Link", name: name, widget: string }
+              - {label: "Url", name: url, widget: string }
+              - {label: "Dropdown", name: is_dropdown, widget: boolean, required: false}
+              - {label: "Button", name: style_as_button, widget: boolean, required: false}
+              - label: "submenus"
+                name: submenus
+                widget: object
+                create: true
+                fields:
+                  - {label: Link, name: name, widget: string, required: false}
+                  - {label: URL, name: url, widget: string, required: false}
+      - label: "Opening Hours"
+        name: "opening_hours"
+        file: "_data/opening-hours.yml"
+        fields:
+          - label: "Schedule"
+            name: "opening_hours"
+            widget: list
+            hint: "Format times like this: 08:00 instead of 08h00)"
+            create: true
+            fields:
+              - {label: "Weekday", name: day, widget: string }
+              - {label: "Opens", name: opens, widget: string }
+              - {label: "Closes", name: closes, widget: string }
+    

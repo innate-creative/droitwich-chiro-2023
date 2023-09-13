@@ -11,7 +11,7 @@ page_scripts_code_block: >-
   <div class="container mx-auto flex flex-col md:flex-row gap-8 items-center justify-end md:justify-center px-4 md:px-0 pb-8 pd:pb-0">
     <div class="md:flex-1">
       <h1 class="editable text-3xl md:text-5xl text-gray-50 mb-6">
-        Contact Us
+        Schedule appointment
       </h1>
       <p class="editable text-base md:text-xl text-gray-50">
         We're here to help you with your health goals. Use the form to submit an enquiry and we'll reply shortly.
@@ -38,8 +38,7 @@ page_scripts_code_block: >-
         </select>
         <label for="message" class="text-gray-50 text-lg font-bold">Your message</label>
         <textarea type="text" name="Message" class="border border-white rounded-md text-gray-50 p-2 md:p-4 bg-transparent"></textarea>
-        <input type="hidden" name="_to" value="{{ site.data.settings.general.email }}">        
-        <!-- <input id="submit" type="submit" value="Send message" class="btn-highlight btn-default g-recaptcha" data-sitekey="6Lfv7aonAAAAAHHdR_xhOPsmlDAoLWeD7hTeB8EW" data-callback='onSubmit' data-action='submit'> -->
+        <input type="hidden" name="_to" value="{{ site.data.settings.general.email }}">                
         <input id="submit" type="submit" value="Send message" class="btn-highlight btn-default">
       </form>
     </div>

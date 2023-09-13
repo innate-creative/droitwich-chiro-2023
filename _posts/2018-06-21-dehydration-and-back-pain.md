@@ -10,9 +10,11 @@ preview_image_alt_text:
 categories: Dehydration
 keywords:
 ---
-**How Dehydration Affects the Body**
+## **How Dehydration Affects the Body**
 
 Healthy nutrition includes drinking at least 4 to 8 glasses of water every day. Admittedly, this is a wide range, but 4 8-ounce glasses of water represents the minimum intake for adult men and women. A useful frame of reference is the presence or absence of thirst. Optimally, you should never feel as if your mouth and throat are dry and that you "need" a drink of water. For example, hikers are frequently reminded by trail guides to drink water continuously throughout a hike. Experienced trail guides add the friendly warning that "if you feel thirsty, it's too late" to ward off a headache and other symptoms of dehydration such as dizziness and confusion.
+
+## What are the benefits of keeping hydrated
 
 Sufficient water intake is critically important in maintaining normal physiological processes and eliminating metabolic waste products. All cells are aqueous environments. Drinking appropriate amounts of water every day aids each and every one of your body's cells in performing its numerous functions so that you remain healthy and well. Also, water is a key component of the intervertebral discs. These shock-absorbing cartilaginous structures assist your spinal column in supporting the weight of your head and torso and distributing mechanical loads so that you can effectively perform physical tasks such as carrying weights.
 

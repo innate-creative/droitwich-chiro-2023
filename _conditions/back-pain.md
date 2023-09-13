@@ -74,4 +74,4 @@ Why choose Dr. Andrew Robson at Droitwich Back And Neck Clinic for your back pai
 
 ## **Don't Let Back Pain Limit You**
 
-If back pain is interfering with your daily life and preventing you from enjoying your favorite activities, it's time to take action. Let Dr. Andrew Robson at Droitwich Back And Neck Clinic be your partner in finding relief from back pain and improving your overall well-being. Contact us today to [schedule a consultation](/book-online.html) and take the first step toward a healthier, pain-free future.
+If back pain is interfering with your daily life and preventing you from enjoying your favorite activities, it's time to take action. Let Dr. Andrew Robson at Droitwich Back And Neck Clinic be your partner in finding relief from back pain and improving your overall well-being. Contact us today to [schedule a consultation](/contact.html) and take the first step toward a healthier, pain-free future.

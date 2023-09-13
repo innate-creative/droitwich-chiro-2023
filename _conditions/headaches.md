@@ -58,4 +58,4 @@ Once our team has all the information required to make an accurate diagnosis, we
 ### Prevention and education:
 In order to help you experience lasting results outside of our practice, our team will equip you with knowledge on how to prevent future injuries, ways to reduce stress, give you sound ergonomic advice, as well as prescribe specific rehabilitation exercises just for you.
 
-For your next appointment with our chiropractors, [book online today](/book-online).
+For your next appointment with our chiropractors, [book online today](/contact).

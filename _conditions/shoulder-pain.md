@@ -75,4 +75,4 @@ Why choose Droitwich Back And Neck Clinic for your shoulder pain relief? Here ar
 
 ## **Don't Let Shoulder Pain Hold You Back**
 
-If shoulder pain is limiting your activities and affecting your quality of life, it's time to take action. Let Droitwich Back And Neck Clinic be your partner in finding relief from shoulder pain and regaining your mobility. [Contact us today](/book-online.html) to schedule a consultation and take the first step toward a healthier, pain-free future.
+If shoulder pain is limiting your activities and affecting your quality of life, it's time to take action. Let Droitwich Back And Neck Clinic be your partner in finding relief from shoulder pain and regaining your mobility. [Contact us today](/contact.html) to schedule a consultation and take the first step toward a healthier, pain-free future.

@@ -105,16 +105,9 @@ navigation:
       style_as_button: false
       submenus:
         - name:
-          url:    
-    - name: Contact
-      url: '/contact'
-      is_dropdown: false
-      style_as_button: false
-      submenus:             
-        - name:
-          url:
+          url:        
     - name: Book now
-      url: '/book-online'
+      url: '/contact'
       is_dropdown: false
       style_as_button: true
       submenus:                 
@@ -122,7 +115,10 @@ navigation:
           url:
 seo:
   site_description_text: Local chiropractor serving the Droitwich, Worcester and Bromsgrove communities.
-  keywords: [chiropractor droitwich]
+  keywords: 
+    - chiropractor droitwich
+    - chiropractor worcester
+    - chiropractor bromsgrove    
 configuration:
   google_tag_manager_id:
   head_code_block: >-
