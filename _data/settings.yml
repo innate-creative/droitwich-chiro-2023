@@ -85,11 +85,7 @@ navigation:
         - name: Elbow Pain
           url: /conditions/elbow-pain
         - name: Migraines
-          url: /conditions/migraines
-        - name: Disc Injuries
-          url: /conditions/disc-injuries
-        - name: Dizziness 
-          url: /conditions/dizziness
+          url: /conditions/migraines        
         - name: Headaches 
           url: /conditions/headaches      
     - name: FAQS
