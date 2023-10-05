@@ -109,6 +109,13 @@ navigation:
       submenus:                 
         - name:
           url:
+    - name: Contact us
+      url: '/contact'
+      is_dropdown: false
+      style_as_button: true
+      submenus:                 
+        - name:
+          url:
 seo:
   site_description_text: Local chiropractor serving the Droitwich, Worcester and Bromsgrove communities.
   keywords: 

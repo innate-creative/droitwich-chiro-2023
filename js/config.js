@@ -179,21 +179,14 @@ var klaroConfig = {
             },
             purposes: {
                 analytics: 'Analytics',
-                security: 'Security',
-                livechat: 'Livechat',
-                advertising: 'Advertising',
+                security: 'Security',                
                 styling: 'Styling',
             },
         },
     },
 
     // This is a list of third-party services that Klaro will manage for you.
-    services: [
-        {
-            name: 'youtube',
-            default: true,
-            purposes: ['marketing'],
-        },
+    services: [        
         {
             name: 'google-tag-manager',
             purposes: ['analytics'],
@@ -312,23 +305,11 @@ var klaroConfig = {
             // onlyOnce: true,
         // },
 
-        // The services will appear in the modal in the same order as defined here.        
-        {
-            name: 'messenger',
-            title: 'Messenger',
-            default: true,
-            purposes: ['livechat'],
-        },                
+        // The services will appear in the modal in the same order as defined here.                               
 /*        {
             name: 'googleFonts',
             title: 'Google Fonts',
             purposes: ['styling'],
-        },*/
-        {
-            name: 'cloudflare',
-            title: 'Cloudflare',
-            purposes: ['security'],
-            required: true,
-        },
+        },*/        
     ],
 };

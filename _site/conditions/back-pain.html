@@ -135,7 +135,7 @@
   </script>
 
 <link rel="canonical" href="https://droitwichchiro.com/conditions/back-pain">
-  <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Alata&family=Questrial&display=swap" rel="stylesheet preload" as="style" crossorigin="anonymous" type="text/css">  
+  <!-- Google Tag Manager --> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-TVZC59W');</script> <!-- End Google Tag Manager --> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Alata&family=Questrial&display=swap" rel="stylesheet preload" as="style" crossorigin="anonymous" type="text/css">  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" defer></script>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -143,9 +143,8 @@
 </head>
     <body class="font-body min-h-screen flex flex-col overflow-x-hidden" style="scroll-behavior: smooth;">
       <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe data-name="google-tag-manager"
-          data-src="https://www.googletagmanager.com/ns.html?id="
-          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVZC59W" height="0" width="0"
+          style="display:none;visibility:hidden"></iframe></noscript>
       <!-- End Google Tag Manager (noscript) -->
       <header>
         <div class="bg-gray-50 fixed sm:relative sm:top-0 w-full sm:w-auto z-50 shadow-md">
@@ -162,11 +161,11 @@
   </div>
 </div>
   <div class="flex items-center justify-between px-4 md:px-0 py-2 md:py-4 container mx-auto">
-    <a href="/" class="nav-logo">
+    <a href="/" class="nav-logo md:w-32 lg:w-52">
       <img src="/assets/images/droitwich-logo-final.png" alt="Droitwich Back and Neck Clinic logo" class="object-contain h-full w-full">
     </a>
     <!-- Full nav -->
-    <nav id="nav-menu" class="hidden sm:flex flex-grow flex-col sm:flex-row justify-end items-center gap-12 sm:gap-4 lg:gap-8">
+    <nav id="nav-menu" class="hidden md:flex flex-grow flex-col sm:flex-row justify-end items-center gap-12 sm:gap-4 lg:gap-8">
       
       
       <a href="/about-us" class="menu-link">
@@ -227,10 +226,6 @@
             
             <a href="/conditions/migraines" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Migraines</a>
             
-            <a href="/conditions/disc-injuries" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Disc Injuries</a>
-            
-            <a href="/conditions/dizziness" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Dizziness</a>
-            
             <a href="/conditions/headaches" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Headaches</a>
             
           </div>
@@ -251,13 +246,19 @@
       
       
       
-      <a href="/contact" class="btn-highlight btn-default">
+      <a href="/contact" class="btn-highlight btn-small">
         Book now
+      </a>    
+      
+      
+      
+      <a href="/contact" class="btn-highlight btn-small">
+        Contact us
       </a>    
       
         
     </nav>
-    <button id="burger" class="sm:hidden">
+    <button id="burger" class="md:hidden">
       <svg id="burger-icon" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" >
         <path d="M0 0h24v24H0V0z" fill="none" />
         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
@@ -303,10 +304,6 @@
         
         <a href="/conditions/migraines" class="text-sm py-1 text-gray-600">Migraines</a>
         
-        <a href="/conditions/disc-injuries" class="text-sm py-1 text-gray-600">Disc Injuries</a>
-        
-        <a href="/conditions/dizziness" class="text-sm py-1 text-gray-600">Dizziness</a>
-        
         <a href="/conditions/headaches" class="text-sm py-1 text-gray-600">Headaches</a>
         
       </div>
@@ -327,6 +324,13 @@
     
     <a href="/contact" class="inline-block btn-small btn-highlight my-8 py-1">
       Book now
+    </a>    
+    
+    
+    
+    
+    <a href="/contact" class="inline-block btn-small btn-highlight my-8 py-1">
+      Contact us
     </a>    
     
     
@@ -493,14 +497,6 @@
         Headaches        
       </a>
       
-      <a href="/conditions/dizziness" class="text-gray-50 font-light hover:text-accent">
-        Dizziness & Vertigo        
-      </a>
-      
-      <a href="/conditions/disc-injuries" class="text-gray-50 font-light hover:text-accent">
-        Disc Injuries        
-      </a>
-      
     </nav>
     <div id="opening-hours" class="opening-hours p-4 md:p-8 bg-gray-200 rounded-md">
   <h3 class="text-lg text-highlight mb-4 font-heading">
@@ -598,7 +594,7 @@
       Schedule your appointment now.
     </h2>
     <p class="editable text-gray-50 mb-6">
-      Restore your healthier self and get rid of pain by scheduling a consultation and visiting us.
+      <strong>Take the first step towards a better life!</strong>
     </p>
     <div class="flex flex-row gap-8 items-center justify-center">
       <a href="tel:+44 1 905 798 226" class="inline-block btn-highlight btn-default">Call us</a>
@@ -659,6 +655,13 @@
       <a href="/contact"
         class="btn-footer btn-highlight">
         Book now
+      </a>
+      
+      
+      
+      <a href="/contact"
+        class="btn-footer btn-highlight">
+        Contact us
       </a>
       
       
