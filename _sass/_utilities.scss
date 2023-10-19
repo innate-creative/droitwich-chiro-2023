@@ -92,7 +92,7 @@
   @apply max-h-0 opacity-0 transform translate-x-full flex flex-col justify-center items-end w-full z-10 transition-all duration-300 overflow-hidden;
 }
 .mobile-submenu.open {
-  @apply max-h-screen opacity-100 translate-x-0 transition-all duration-500 z-30;
+  @apply max-h-screen opacity-100 translate-x-0 transition-all duration-500 z-30 overflow-visible;
 }
 
 .footer-nav {
